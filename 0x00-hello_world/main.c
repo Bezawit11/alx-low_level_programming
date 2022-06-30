@@ -3,6 +3,6 @@
 int main(void)
 
 {
-	printf("my first c file\n");
+	printf("tail c\n");
        	return (0);
 }
