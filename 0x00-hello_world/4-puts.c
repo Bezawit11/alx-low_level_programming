@@ -1,7 +1,14 @@
 #include <stdio.h>
 #include <string.h>
-
-/* main - responsible for executing the program */
+/**
+ *
+ *  * main - Entry point
+ *
+ *   *
+ *
+ *    * Return: Always 0 (Success)
+ *
+ *     */
 int main(void)  
 
 {
