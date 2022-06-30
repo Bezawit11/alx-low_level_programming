@@ -1,7 +1,8 @@
 #include <stdio.h>
 #include <string.h>
 
-int main(void)
+/* main - responsible for executing the program */
+int main(void)  
 
 {
 char str[] = "\"Programming is like building a multilingual puzzle";
