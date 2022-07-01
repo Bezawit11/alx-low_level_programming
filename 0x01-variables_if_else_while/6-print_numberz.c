@@ -8,9 +8,9 @@
 int main(void)
 
 {
-char ch = '0';
-for (ch = '0'; ch <= '9'; ch++)
-putchar(ch);
+int n;
+for (n = 0; n <= 9; n++)
+putchar((n % 10) + '0');
 putchar('\n');
 return (0);
 }
