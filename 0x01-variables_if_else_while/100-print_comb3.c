@@ -1,7 +1,7 @@
 #include <stdio.h>
 
 /**
- *main
+ *main - Entry point
  *printing using putchar function
  *Return: Always 0 (Success)
  */
@@ -18,10 +18,12 @@ if (n < m)
 {
 putchar((n % 10) + '0');
 putchar((m % 10) + '0');
+if (n < 8)
 putchar(',');
 putchar(' ');
 }
 }
 }
+putchar('\n');
 return (0);
 }
