@@ -6,6 +6,7 @@
  *Return: 0 (Success)
  */
 int main(void)
+{
 int x;
 int f =0;
 for (x = 1; x <= 50; x++)
