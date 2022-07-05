@@ -8,8 +8,8 @@
 int main(void)
 {
 int x;
-unsigned int c = 1;
-unsigned int a = 0;
+unsigned long long int c = 1;
+unsigned long long int a = 0;
 for (x = 1; x <= 45; x++)
 {
 c = c + a;
@@ -21,7 +21,7 @@ a = c - a;
 for (x = 46; x <= 50; x++)
 {
 c = c + a;
-printf("%u", c);
+printf("%llu", c);
 printf(",");
 printf(" ");
 a = c - a;
