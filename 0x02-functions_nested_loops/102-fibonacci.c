@@ -8,13 +8,15 @@
 int main(void)
 {
 int x;
-int f =0;
+int c = 1;
+int a = 0;
 for (x = 1; x <= 50; x++)
 {
-f += x;
-printf("%d", f);
+c = c + a;
+printf("%d", c);
 printf(",");
 printf(" ");
+a = c - a;
 }
 printf("\n");
 return (0);
