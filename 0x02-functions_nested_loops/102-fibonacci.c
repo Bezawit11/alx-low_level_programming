@@ -22,6 +22,9 @@ for (x = 46; x <= 50; x++)
 {
 c = c + a;
 printf("%u", c);
+printf(",");
+printf(" ");
+a = c - a;
 }
 printf("\n");
 return (0);
