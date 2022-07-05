@@ -8,12 +8,12 @@
 int main(void)
 {
 int x;
-unsigned long long int c = 1;
-unsigned long long int a = 0;
+long int c = 1;
+long int a = 0;
 for (x = 1; x <= 45; x++)
 {
 c = c + a;
-printf("%d", c);
+printf("%ld", c);
 printf(",");
 printf(" ");
 a = c - a;
@@ -21,7 +21,7 @@ a = c - a;
 for (x = 46; x <= 50; x++)
 {
 c = c + a;
-printf("%llu", c);
+printf("%ld", c);
 printf(",");
 printf(" ");
 a = c - a;
