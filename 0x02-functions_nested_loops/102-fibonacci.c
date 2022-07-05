@@ -8,8 +8,8 @@
 int main(void)
 {
 int x;
-int c = 1;
-int a = 0;
+unsigned int c = 1;
+unsigned int a = 0;
 for (x = 1; x <= 50; x++)
 {
 c = c + a;
