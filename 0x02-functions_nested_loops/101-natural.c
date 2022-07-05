@@ -9,7 +9,7 @@ int main(void)
 
 {
 int i;
-int a = 0, b = 0;
+int a = 0;
 for (i = 3; i < 1024; i++)
 {
 if (i % 3 == 0 || i % 5 == 0)
