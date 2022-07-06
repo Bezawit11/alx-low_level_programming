@@ -24,9 +24,5 @@ else if (c > a && c > b)
 {
 largest = c;
 }
-else 
-{
-printf("equal numbers\n");
-}
 return (largest);
 }
