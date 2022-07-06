@@ -22,6 +22,8 @@ for (x = 46; x <= 50; x++)
 {
 c = c + a;
 printf("%ld", c);
+if (x == 50)
+continue;
 printf(",");
 printf(" ");
 a = c - a;
