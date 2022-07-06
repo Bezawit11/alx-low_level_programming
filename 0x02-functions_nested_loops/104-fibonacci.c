@@ -8,12 +8,12 @@
 int main(void)
 
 {
-long int c = 1, a = 0;
-long int i;
+unsigned long int c = 1, a = 0;
+unsigned long int i;
 for (i = 1; i <= 88; i++)
 {
 c = c + a;
-printf("%ld", c);
+printf("%lu", c);
 if (i == 88)
 continue;
 printf(",");
