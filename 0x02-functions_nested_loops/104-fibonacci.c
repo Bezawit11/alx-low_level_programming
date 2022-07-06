@@ -10,7 +10,7 @@ int main(void)
 {
 long int c = 1, a = 0;
 long int i;
-for (i = 1; i <= 96; i++)
+for (i = 1; i <= 92; i++)
 {
 c = c + a;
 printf("%ld", c);
