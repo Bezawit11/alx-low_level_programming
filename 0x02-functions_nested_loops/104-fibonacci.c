@@ -10,10 +10,12 @@ int main(void)
 {
 long int c = 1, a = 0;
 long int i;
-for (i = 1; i <= 86; i++)
+for (i = 1; i <= 88; i++)
 {
 c = c + a;
 printf("%ld", c);
+if (i == 88)
+continue;
 printf(",");
 printf(" ");
 a = c - a;
