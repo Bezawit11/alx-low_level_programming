@@ -11,7 +11,7 @@ int main(void)
 long int c;
 long int a = 0;
 long int s = 0;
-while (c < 4,000,000)
+while (c < 4000000)
 {
 c = c + a;
 if (c % 2 == 0)
@@ -19,6 +19,6 @@ if (c % 2 == 0)
 s += c;
 }
 }
-printf("%ld", s)
+printf("%ld", s);
 return (0);
 }
