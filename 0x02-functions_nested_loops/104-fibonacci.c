@@ -10,14 +10,11 @@ int main(void)
 {
 unsigned long int c = 1, a = 0;
 unsigned long int i;
-for (i = 1; i <= 88; i++)
+for (i = 1; i <= 98; i++)
 {
 c = c + a;
-if (c <= 420196140727489673)
-{
 printf("%lu", c);
-}
-if (i == 88)
+if (i == 98)
 continue;
 printf(",");
 printf(" ");
