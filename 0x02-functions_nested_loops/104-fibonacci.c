@@ -9,7 +9,6 @@ int main(void)
 
 {
 long int c = 1, a = 0;
-long int i;
 while (c <= 420196140727489673)
 {
 c = c + a;
@@ -19,7 +18,6 @@ if (c == 420196140727489673)
 continue;
 printf(",");
 printf(" ");
-}
 }
 printf("\n");
 return (0);
