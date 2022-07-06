@@ -13,7 +13,10 @@ unsigned long int i;
 for (i = 1; i <= 88; i++)
 {
 c = c + a;
+if (c <= 420196140727489673)
+{
 printf("%lu", c);
+}
 if (i == 88)
 continue;
 printf(",");
