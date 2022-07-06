@@ -11,7 +11,7 @@ int main(void)
 long int c = 1;
 long int a = 0;
 long int s = 0;
-while (c < 4000000)
+if (c < 4000000)
 {
 c = c + a;
 if (c % 2 == 0)
