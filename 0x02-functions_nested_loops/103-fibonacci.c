@@ -20,6 +20,6 @@ if (c % 2 == 0)
 s += c;
 }
 }
-printf("%ld", s);
+printf("%ld\n", s);
 return (0);
 }
