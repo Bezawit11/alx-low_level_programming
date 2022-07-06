@@ -8,17 +8,17 @@
 int main(void)
 
 {
-unsigned long int c = 1, a = 0;
-unsigned long int i;
-for (i = 1; i <= 98; i++)
+long int c = 1, a = 0;
+long int i;
+while (c <= 420196140727489673)
 {
 c = c + a;
-printf("%lu", c);
-if (i == 98)
+printf("%ld", c);
+a = c - a;
+if (c == 420196140727489673)
 continue;
 printf(",");
 printf(" ");
-a = c - a;
 }
 printf("\n");
 return (0);
