@@ -28,9 +28,9 @@ int main(void)
 
 
 
-		        month = 02;
+		        month = 03;
 
-			    day = 29;
+			    day = 04;
 
 			        year = 2000;
 
