@@ -19,11 +19,10 @@ _putchar(92);
 _putchar('\n');
 for (j = 1 ; j <= i; j++)
 {
-if (n != 1)
+if (n != 1 && i != n)
 _putchar(32);
 }
 }
-_putchar('\n');
 }
 else
 {
