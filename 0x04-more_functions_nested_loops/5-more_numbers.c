@@ -21,7 +21,6 @@ for (n = 58; n <= 62; n++)
 _putchar(49);
 _putchar(n - 10);
 }
-printf("\n");
 i++;
 }
 }
