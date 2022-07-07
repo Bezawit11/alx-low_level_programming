@@ -15,6 +15,8 @@ if (c >= 48 && c <= 58)
 result = 1;
 }
 else
+{
 result = 0;
+}
 return (result);
 }
