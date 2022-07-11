@@ -9,12 +9,7 @@
 void print_rev(char *s)
 
 {
-int a = 1;
-while (*s != '\0')
-{
-a = a + 1;
-s++;
-}
+int a = 63;
 while (a >= 0)
 {
 _putchar(*(s + a));
