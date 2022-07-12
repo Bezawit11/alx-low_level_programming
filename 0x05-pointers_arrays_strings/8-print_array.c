@@ -2,10 +2,10 @@
 #include "main.h"
 
 /**
- *print_array -
- *@a:
- *@n:
- *Return: 
+ *print_array - function
+ *@a: pointer
+ *@n: number of elements
+ *Return: void
  */
 void print_array(int *a, int n)
 
