@@ -3,9 +3,9 @@
 #include "main.h"
 
 /**
- *
- *
- *
+ *_atoi - string to int
+ *@s: pointer
+ *Return: returns to a value
  */
 int _atoi(char *s)
 
