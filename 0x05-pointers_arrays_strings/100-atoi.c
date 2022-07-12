@@ -14,7 +14,7 @@ int l, i;
 l = strlen(s);
 for (i = 0; i <= l; i++)
 {
-if (*(s + i) <= '0' && *(s + i) >= '9')
+if (*(s + i) <= 0 && *(s + i) >= 9)
 break;
 printf("%d", *(s + i));
 }
