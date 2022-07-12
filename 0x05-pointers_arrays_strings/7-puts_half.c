@@ -21,7 +21,7 @@ _putchar(*(str + a));
 }
 else
 {
-for (a = (l + 1) / 2; a <= l; a++)
+for (a = (l + 1) / 2; a < l; a++)
 _putchar(*(str + a));
 }
 _putchar('\n');
