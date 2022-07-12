@@ -14,7 +14,7 @@ int l, a;
 l = strlen(str);
 if (l % 2 == 0)
 {
-for (a = l / 2; a <= l; a++)
+for (a = l / 2; a < l; a++)
 {
 _putchar(*(str + a));
 }
