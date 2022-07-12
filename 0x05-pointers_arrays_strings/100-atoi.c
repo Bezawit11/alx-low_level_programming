@@ -10,8 +10,9 @@
 int _atoi(char *s)
 
 {
-int l, i, a, m;
-int n = 0;
+int l, i, a;
+double m;
+double n = 0;
 int t = 1;
 l = strlen(s);
 for (i = 0; i <= l; i++)
