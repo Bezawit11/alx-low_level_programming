@@ -18,5 +18,5 @@ for (i = 0; i < l1; i++)
 {
 *(dest + l2 + i) = *(src + i);
 }
-return(dest);
+return (dest);
 }
