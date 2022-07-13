@@ -3,10 +3,10 @@
 #include "main.h"
 
 /**
- *_strcat -
- *@dest:
- *@src:
- *Return:
+ *_strcat - concatenates strings
+ *@dest: pointer
+ *@src: pointer
+ *Return: returns char
  */
 char *_strcat(char *dest, char *src)
 
