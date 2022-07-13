@@ -17,5 +17,5 @@ for (i = 0; i <= l; i++)
 if (c[i] >= 'a' && c[i] <= 'z')
 c[i] = c[i] - 32;
 }
-return(c);
+return (c);
 }
