@@ -16,7 +16,9 @@ l = strlen (s1);
 for (i = 0; i < l; i++)
 {
 if (*(s1 + i) != *(s2 + i))
+{
 break;
+}
 }
 a = s1[i];
 b = s2[i];
