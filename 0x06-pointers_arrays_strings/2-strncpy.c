@@ -1,4 +1,5 @@
 #include <stdio.h>
+#include <string.h>
 #include "main.h"
 
 /**
@@ -11,10 +12,14 @@
 char *_strncpy(char *dest, char *src, int n)
 
 {
-int i;
-for (i = 0; i <= n; i++)
+int i, a;
+a = strlen(dest);
+if (n <= a)
+{
+for (i = 0; i < n; i++) 
 {
 *(dest + i) = *(src + i);
+}
 }
 return (dest);
 }
