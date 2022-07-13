@@ -4,9 +4,9 @@
 
 /**
  *_strcmp - compares a string
- *@s1: string pointer
- *@s2: string pointer
- *Return: returns an int
+ *@s1: character pointer
+ *@s2: character pointer
+ *Return: return an integer
  */
 int _strcmp(char *s1, char *s2)
 
