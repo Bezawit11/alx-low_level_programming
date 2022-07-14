@@ -3,9 +3,9 @@
 #include "main.h"
 
 /**
- *
- *
- *
+ *cap_string - capitalizes words
+ *@c: character pointer
+ *Return: returns value
  */
 char *cap_string(char *c)
 
@@ -19,6 +19,7 @@ if (c[i] >= 'a' && c[i] <= 'z')
 if (c[i - 1] != ' ' && c[i - 1] != '\n' && c[i - 1] != '\t' && c[i - 1] != '.')
 if (c[i - 1] != ',' && c[i - 1] != ';' && c[i - 1] != '!' && c[i - 1] != '?')
 if (c[i - 1] != '(' && c[i - 1] != ')' && c[i - 1] != '{' && c[i - 1] != '}')
+if (c[i - 1] != '"')
 continue;
 c[i] = c[i] - 32;
 }
