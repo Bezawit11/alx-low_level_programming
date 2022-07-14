@@ -12,7 +12,7 @@ char *cap_string(char *c)
 {
 int i, l;
 l = strlen(c);
-for (i = 0; i <= l; i++)
+for (i = 0; i < l; i++)
 {
 if (c[i] >= 'a' && c[i] <= 'z')
 {
