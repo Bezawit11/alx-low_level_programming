@@ -3,26 +3,27 @@
 #include "main.h"
 
 /**
- *
- *
- *
+ *leet - encoding
+ *@c: character pointer
+ *Return: returns a value
  */
 char *leet(char *c)
 
 {
 int d, i;
-d = strlen(c);
-for (i = 0; i <= d; i++)
+char s[] = "aeotl";
+char C[] = "AEOTL";
+char l[] = "43071";
+for (i = 0; c[i] != '\0'; i++)
 {
-if (c[i] == 'e' || c[i] == 'a' || c[i] == 'o' || c[i] == 'l' || c[i] == 't')/* || c[i] == 'E' || c[i] == 'A' || c[i] == 'O' || c[i] == 'L' || c[i] == 'T')*/
-c[i] = c[i] - 32;
-else if (c[i] == 'E')
-c[i] = c[i] - 18;
+for (d = 0; d < 5; d++)
+{
+if (c[i] == s[d] || c[i] == C[d])
+{
+c[i] = l[d];
+break;
 }
-/*
-for (i = 0; i <= l; i++)
-{
-c[i] = c[i] - 18;
-}*/
+}
+}
 return (c);
 }
