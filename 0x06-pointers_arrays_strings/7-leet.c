@@ -10,20 +10,19 @@
 char *leet(char *c)
 
 {
-int l, i;
-l = strlen(c);
+int d, i;
+d = strlen(c);
+for (i = 0; i <= d; i++)
+{
+if (c[i] == 'e' || c[i] == 'a' || c[i] == 'o' || c[i] == 'l' || c[i] == 't')/* || c[i] == 'E' || c[i] == 'A' || c[i] == 'O' || c[i] == 'L' || c[i] == 'T')*/
+c[i] = c[i] - 32;
+else if (c[i] == 'E')
+c[i] = c[i] - 18;
+}
+/*
 for (i = 0; i <= l; i++)
 {
-if (c[i] == 'e' && c[i] == 'E')
-c[i] = 51;
-if (c[i] == 'a' && c[i] == 'A')
-c[i] = 52;
-if (c[i] == 'o' && c[i] == 'O')
-c[i] = 48;
-if (c[i] == 't' && c[i] == 'T')
-c[i] = 55;
-if (c[i] == 'l' && c[i] == 'L')
-c[i] = 49;
-}
+c[i] = c[i] - 18;
+}*/
 return (c);
 }
