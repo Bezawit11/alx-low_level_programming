@@ -1,5 +1,4 @@
 #include <stdio.h>
-#include <math.h>
 #include "main.h"
 
 /**
@@ -18,7 +17,7 @@ if (n < 10 && n > 0)
 {
 _putchar(n + '0');
 }
-else 
+else
 {
 if (n < 0)
 {
@@ -35,7 +34,7 @@ for (c = 0; c < i; c++)
 {
 a = a * 10;
 }
-_putchar((n / a) + '0');
+_putchar((n / a) +'0');
 for (h = 0; h <= i - 1; h++)
 {
 a = a / 10;
