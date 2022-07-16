@@ -14,12 +14,15 @@ int a = 1;
 int h, d, c;
 int i = 0;
 d = n + 0;
-/*if (n < 10 && n > 0)
+/*if ( n < 0)
+{
+n = n * -1;
+}*/
+if (n < 10 && n > 0)
 {
 _putchar(n + '0');
 }
-else*/
-if (n >= 10)
+else 
 {
 while (d != 0)
 {
