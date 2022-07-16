@@ -1,4 +1,5 @@
 #include <stdio.h>
+#include <math.h>
 #include "main.h"
 
 /**
@@ -9,13 +10,37 @@
 void print_number(int n)
 
 {
-if (n < 10)
+int a = 1;
+int h, d, c;
+int i = 0;
+d = n + 0;
+/*if (n < 10 && n > 0)
 {
 _putchar(n + '0');
 }
-else
+else*/
+if (n >= 10)
 {
-_putchar((n / 10) + '0');
-_putchar((n % 10) + '0');
+while (d != 0)
+{
+i++;
+d = d / 10;
 }
+i = i - 1;
+for (c = 0; c < i; c++)
+{
+a = a * 10;
+}
+/*if (n < 0)
+{
+n = n * -1;
+}*/
+_putchar((n / a) + '0');
+for (h = 0; h <= i - 1; h++)
+{
+a = a / 10;
+_putchar(((n / a) % 10) + '0');
+}
+}
+/*_putchar((n % 10) + '0');*/
 }
