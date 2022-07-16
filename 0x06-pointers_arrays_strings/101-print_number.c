@@ -14,21 +14,27 @@ int a = 1;
 int h, d, c;
 int i = 0;
 d = n + 0;
+/* shfuug*/
 if (n < 10 && n > 0)
 {
 _putchar(n + '0');
 }
+/*jhgfdkhyjyuf*/
 else 
 {
 if (n < 0)
+{
 _putchar(45);
 n = n * -1;
+}
+/* ih */
 while (d != 0)
 {
 i++;
 d = d / 10;
 }
 i = i - 1;
+/* some comments*/
 for (c = 0; c < i; c++)
 {
 a = a * 10;
