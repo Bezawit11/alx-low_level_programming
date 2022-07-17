@@ -7,7 +7,7 @@
 int main(void)
 
 {
-int n, i, p;
+int n, i, a;
 for (n = 2; n <= 1231952; n++)
 {
 for (i = 2; i <= n; i++)
@@ -20,13 +20,14 @@ if (n % i != 0)
 {
 continue;
 }
-p = n;
-if (1231952 % p == 0)
+a = n;
+}
+if (1231952 % a == 0)
 {
-printf("%d", p);
+printf("%d", a);
 printf(",");
 }
 }
-}
+printf("\n");
 return (0);
 }
