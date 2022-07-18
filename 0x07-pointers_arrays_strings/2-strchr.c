@@ -5,7 +5,7 @@
 /**
  *_strchr - a function
  *@s: pointer
- *@: char
+ *@c: char
  *Return: returns a value
  */
 char *_strchr(char *s, char c)
@@ -21,6 +21,9 @@ b = *(s + i);
 if (b == c)
 break;
 }
+if (i == l)
+r = NULL;
+else
 r = (s + i + 0);
 return (r);
 }
