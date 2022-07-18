@@ -24,7 +24,7 @@ if (*(needle + i) == *(haystack + j))
 break;
 }
 }
-m = j;
+m = j + 1;
 if (*(needle + i + 1) != *(haystack + j + 1))
 {
 m = j;
@@ -34,6 +34,6 @@ i = 0;
 if (j == l2)
 r = NULL;
 else
-r = (haystack + m - l1 + 1);
+r = (haystack + m - l1);
 return (r);
 }
