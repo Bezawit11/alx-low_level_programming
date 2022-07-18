@@ -15,14 +15,14 @@ unsigned int a = 0, b = 0;
 int i, j, l1, l2;
 l1 = strlen(accept);
 l2 = strlen(s);
-for (i = 0; i <= l2; i++)
+for (i = 0; i < l2; i++)
 {
-for (j = 0; j <= l1; j++)
+for (j = 0; j < l1; j++)
 {
 if (*(s + i) == *(accept + j))
 a = a + 1;
 }
-if (a == b)
+if (a <= b)
 {
 break;
 }
