@@ -15,7 +15,7 @@ int i, l;
 char b;
 char *r;
 l = strlen(s);
-for (i = 0; i <= l; i++)
+for (i = 0; i < l; i++)
 {
 b = *(s + i);
 if (b == c)
