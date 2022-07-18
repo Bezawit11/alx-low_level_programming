@@ -15,9 +15,9 @@ int i, j, l1, l2;
 char *r;
 l1 = strlen(accept);
 l2 = strlen(s);
-for (i = 0; i < l2; i++)
+for (i = 0; i <= l2; i++)
 {
-for (j = 0; j < l1; j++)
+for (j = 0; j <= l1; j++)
 {
 if (*(s + i) == *(accept + j))
 break;
