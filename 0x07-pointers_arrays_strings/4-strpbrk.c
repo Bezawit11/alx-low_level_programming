@@ -25,7 +25,7 @@ break;
 if (*(s + i) == *(accept + j))
 break;
 }
-if (j > l1)
+if (j > l1 && i > l2)
 r = NULL;
 else
 r = (s + i + 0);
