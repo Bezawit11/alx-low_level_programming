@@ -15,9 +15,9 @@ unsigned int a = 0;
 int i, j, l1, l2;
 l1 = strlen(accept);
 l2 = strlen(s);
-for (i = 0; i <= l1; i++)
+for (i = 0; i < l1; i++)
 {
-for (j = 0; j <= l2; j++)
+for (j = 0; j < l2; j++)
 {
 if (*(s + i) == *(accept + j))
 a = a + 1;
