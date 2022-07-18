@@ -22,7 +22,7 @@ for (j = 0; j <= l1; j++)
 if (*(s + i) == *(accept + j))
 a = a + 1;
 }
-if (a <= b)
+if (a == b)
 {
 break;
 }
