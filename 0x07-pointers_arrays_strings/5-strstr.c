@@ -15,9 +15,9 @@ int i, j, l1, l2, n, m = 0;
 char *r;
 l1 = strlen(needle);
 l2 = strlen(haystack);
-for (i = 0; i <= l1; i++)
+for (i = 0; i < l1; i++)
 {
-for (j = m; j <= l2; j++)
+for (j = m; j < l2; j++)
 {
 if (*(needle + i) == *(haystack + j))
 {
@@ -35,7 +35,7 @@ else
 m = j - l1 + 1;
 }
 }
-if (j == l2)
+if (j == l2 || m < 0)
 r = NULL;
 else
 r = (haystack + m + 0);
