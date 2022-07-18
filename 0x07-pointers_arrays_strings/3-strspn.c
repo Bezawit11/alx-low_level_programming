@@ -11,22 +11,22 @@
 unsigned int _strspn(char *s, char *accept)
 
 {
-unsigned int a = 0;
-int i, j, l1, l2, b = 0;
+unsigned int a = 0, b = 0;
+int i, j, l1, l2;
 l1 = strlen(accept);
 l2 = strlen(s);
-for (i = 0; i <= l1; i++)
+for (i = 0; i <= l2; i++)
 {
-for (j = 0; j <= l2; j++)
+for (j = 0; j <= l1; j++)
 {
 if (*(s + i) == *(accept + j))
 a = a + 1;
-else
-b = b + 1;
 }
-if (b == l1)
+if (a <= b)
+{
 break;
-b = 0;
+}
+b = a + 0;
 }
 return (a);
 }
