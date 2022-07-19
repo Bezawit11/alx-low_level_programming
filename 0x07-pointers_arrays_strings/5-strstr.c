@@ -24,16 +24,16 @@ if (*(needle + i) == *(haystack + j))
 break;
 }
 }
-m = j + 1;
+m = j;
 if (*(needle + i + 1) != *(haystack + j + 1))
 {
-m = j;
+m = j + 1;
 i = 0;
 }
 }
-if (j < l1)
+if (i == 0)
 r = NULL;
 else
-r = (haystack + m - l1);
+r = (haystack + m - l1 + 1);
 return (r);
 }
