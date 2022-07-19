@@ -31,7 +31,7 @@ m = j + 1;
 i = 0;
 }
 }
-if (i == 0 && j >= l2)
+if (i == 0 && j >= l2 - 1)
 r = NULL;
 else
 r = (haystack + m - l1);
