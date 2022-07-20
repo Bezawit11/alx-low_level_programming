@@ -11,7 +11,7 @@
 char *_strstr(char *haystack, char *needle)
 
 {
-int i, j, k, l1, l2, m = 0;
+int i, k, j, l1, l2, m = 0;
 char *r;
 l1 = strlen(needle);
 l2 = strlen(haystack);
@@ -30,13 +30,16 @@ k = j;
 break;
 }
 if (j == l2)
+{
 break;
+}
 i = 0;
 m = j;
 }
 if (j == l2)
 r = NULL;
-else
+if (i == l1 - 1)
+printf("%d", k);
 r = (haystack + k - l1);
 return (r);
 }
