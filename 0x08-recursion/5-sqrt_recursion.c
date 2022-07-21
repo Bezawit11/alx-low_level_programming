@@ -12,17 +12,17 @@ return (sqroot(n, 0));
 }
 
 /**
- *square - find square root
- *@n: int to find square root
- *@val: square root
- *Return: int
+ *sqroot - a function
+ *@n: integer
+ *@x: integer
+ *Return: returns int
  */
 int sqroot(int n, int x)
 
 {
-if (x *x == n)
+if (x * x == n)
 return (x);
-else if (x *x < n)
+else if (x * x < n)
 return  (sqroot(n, x + 1));
 else
 return (-1);
