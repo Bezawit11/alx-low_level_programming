@@ -13,7 +13,7 @@ void _puts_recursion(char *s)
 int l;
 l = strlen(s);
 printf("%c", *s);
-if (l > 0)
+if (l > 1)
 {
 _puts_recursion(s + 1);
 }
