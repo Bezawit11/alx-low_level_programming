@@ -3,9 +3,9 @@
 #include "main.h"
 
 /**
- *
- *
- *
+ *is_palindrome -  a function
+ *@s: character para
+ *Return: returns a value
  */
 int is_palindrome(char *s)
 
@@ -17,6 +17,7 @@ return (compare(s, 0, l - 1, l % 2));
 
 /**
  *compare - a function
+ *@s: pointer
  *@a: int
  *@z: int
  *@d: int
@@ -26,7 +27,7 @@ int compare(char *s, int a, int z, int d)
 {
 if (s[a] != s[z])
 return (0);
-if ((a == z && d != 0) || ( a == z + 1 && d == 0))
+if ((a == z && d != 0) || (a == z + 1 && d == 0))
 return (1);
 else
 return (compare(s, a + 1, z - 1, d));
