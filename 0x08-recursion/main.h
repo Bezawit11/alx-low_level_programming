@@ -8,3 +8,6 @@ int is_prime_number(int n);
 int _putchar(char c);
 int sqroot(int n, int x);
 int prime(int n, int x);
+int is_palindrome(char *s);
+int wildcmp(char *s1, char *s2);
+int compare(char *s, int a, int z, int d);
