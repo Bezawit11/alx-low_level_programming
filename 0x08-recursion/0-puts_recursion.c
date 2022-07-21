@@ -1,20 +1,17 @@
 #include <stdio.h>
-#include <string.h>
 #include "main.h"
 
 /**
- *_puts-recursion -  a function
+ *_puts-recursion - a function
  *@s: a character pointer
  *Return: void
  */
 void _puts_recursion(char *s)
 
 {
-int l;
-l = strlen(s);
-printf("%c", *s);
-if (l > 1)
+if (*s != '\0')
 {
+printf("%c", *s);
 _puts_recursion(s + 1);
 }
 else
