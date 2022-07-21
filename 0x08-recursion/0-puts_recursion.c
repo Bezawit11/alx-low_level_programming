@@ -10,11 +10,13 @@
 void _puts_recursion(char *s)
 
 {
-int l, i;
+int l;
 l = strlen(s);
-for (i = 0; i < l; i++)
+printf("%c", *s);
+if (l > 0)
 {
-printf("%c", *(s + i));
+_puts_recursion(s + 1);
 }
+else
 printf("\n");
 }
