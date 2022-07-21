@@ -2,9 +2,9 @@
 #include "main.h"
 
 /**
- *
- *
- *
+ *is_prime_number - a function
+ *@n: integer
+ *Return: returns a value
  */
 int is_prime_number(int n)
 
