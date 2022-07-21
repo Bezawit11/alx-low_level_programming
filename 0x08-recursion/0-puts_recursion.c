@@ -2,7 +2,7 @@
 #include "main.h"
 
 /**
- *_puts-recursion - a function
+ *_puts_recursion - a function
  *@s: a character pointer
  *Return: void
  */
