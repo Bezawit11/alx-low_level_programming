@@ -13,8 +13,10 @@ return (prime(n, 2));
 }
 
 /**
- *
- *
+ *prime - a function
+ *@n: integer
+ *@x: integer
+ *Return: returns value
  */
 int prime(int n, int x)
 
