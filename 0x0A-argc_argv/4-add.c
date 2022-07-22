@@ -20,5 +20,6 @@ printf("Error\n");
 return (1);
 n = n + atoi(argv[i]);
 }
-return (n);
+printf("%i\n", n);
+return (0);
 }
