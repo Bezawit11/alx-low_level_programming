@@ -10,12 +10,11 @@ int main(int argc, char **argv)
 
 {
 (void)argc;
-if (argc == 3)
+if (argc != 3)
 {
-printf("%i\n", atoi(argv[2]) * atoi(argv[1]));
-return (0);
-}
-else 
 printf("Error\n");
 return (1);
+}
+printf("%i\n", atoi(argv[2]) * atoi(argv[1]));
+return (0);
 }
