@@ -1,11 +1,13 @@
 #include <stdio.h>
 
 /**
- *
- *
- *
+ *main - a function
+ *@argc: argument count
+ *@argv: argument array
+ *Return: returns a value
  */
 int main(int argc, char **argv)
+
 {
 (void)argc;
 printf("%s\n", argv[0]);
