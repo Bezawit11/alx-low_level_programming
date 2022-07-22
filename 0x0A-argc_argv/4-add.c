@@ -18,8 +18,10 @@ break;
 if (argc == 1)
 return (0);
 n = n + atoi(argv[i]);
-printf("%d", n);
 }
+if (atoi(argv[i]) == 0)
 printf("Error\n");
 return (1);
+else
+printf("%i", n);
 }
