@@ -1,5 +1,6 @@
 #include <stdio.h>
 #include <stdlib.h>
+#include <ctype.h>
 
 /**
  *main - adds positive numbers
@@ -10,15 +11,28 @@
 int main(int argc, char **argv)
 
 {
-int i, n = 0;
-for (i = 0; i < argc; i++)
-{
+int b, n = 0;
+int a = 1;
 if (argc == 1)
+{
 printf("0\n");
-if (atoi(argv[i]) == 0)
+return (0);
+}
+while (argc > 1)
+{
+b = 0;
+while (argv[a][b])
+{
+if (!isdigit(argv[a][b]))
+{
 printf("Error\n");
 return (1);
-n = n + atoi(argv[i]);
+}
+b++;
+}
+n = n + atoi(argv[a]);
+a++;
+argc--;
 }
 printf("%i\n", n);
 return (0);
