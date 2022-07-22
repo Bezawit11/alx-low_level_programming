@@ -13,11 +13,11 @@ int main(int argc, char **argv)
 int i, n = 0;
 for (i = 0; i < argc; i++)
 {
+if (argc == 1)
+printf("0\n");
 if (atoi(argv[i]) == 0)
 printf("Error\n");
 return (1);
-if (argc == 1)
-return (0);
 n = n + atoi(argv[i]);
 }
 return (n);
