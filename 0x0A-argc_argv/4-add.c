@@ -14,14 +14,11 @@ int i, n = 0;
 for (i = 0; i < argc; i++)
 {
 if (atoi(argv[i]) == 0)
-break;
+printf("Error\n");
+return (1);
 if (argc == 1)
 return (0);
 n = n + atoi(argv[i]);
 }
-if (atoi(argv[i]) == 0)
-printf("Error\n");
-return (1);
-else
-printf("%i", n);
+return (n);
 }
