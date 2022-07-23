@@ -23,6 +23,7 @@ putchar(' ');
 putchar((t % 10) + '0');
 putchar((z % 10) + '0');
 putchar(',');
+putchar(' ');
 }
 }
 }
