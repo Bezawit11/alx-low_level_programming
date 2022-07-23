@@ -11,7 +11,7 @@ int main(void)
 int f, s, t, z;
 for (f = 0; f <= 9; f++)
 {
-for (s = 0; s <= 8; s++)
+for (s = 0; s <= 9; s++)
 {	
 for (t = 0; t <= 9; t++)
 {
