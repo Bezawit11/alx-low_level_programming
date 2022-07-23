@@ -17,16 +17,16 @@ for (t = 0; t <= 9; t++)
 {
 for (z = 1; z <= 9; z++)
 {
-if (s >= z && f == t)
+if (s >= z && f <= t)
 continue;
 putchar((f % 10) + '0');
 putchar((s % 10) + '0');
 putchar(' ');
 putchar((t % 10) + '0');
 putchar((z % 10) + '0');
-putchar(',');
 if (f == 9 && s == 8 && t == 9 && z == 9)
 continue;
+putchar(',');
 putchar(' ');
 }
 }
