@@ -8,15 +8,18 @@
 int main(void)
 
 {
-long int c = 1, a = 0;
+unsigned long int c = 1, a = 0;
 int i;
-for (i = 0; i < 98; i++)
+for (i = 0; i <= 97; i++)
 {
 c = c + a;
 printf("%ld", c);
 a = c - a;
+if (i != 97)
+{
 printf(",");
 printf(" ");
+}
 }
 printf("\n");
 return (0);
