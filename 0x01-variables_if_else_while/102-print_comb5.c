@@ -17,7 +17,7 @@ for (t = 0; t <= 9; t++)
 {
 for (z = 1; z <= 9; z++)
 {
-if (s >= z || f <= t)
+if (s >= z || f < t)
 continue;
 putchar((f % 10) + '0');
 putchar((s % 10) + '0');
