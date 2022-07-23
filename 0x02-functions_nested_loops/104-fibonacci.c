@@ -9,13 +9,12 @@ int main(void)
 
 {
 long int c = 1, a = 0;
-while (c <= 1100087778366101931)
+int i;
+for (i = 0; i < 98; i++)
 {
 c = c + a;
 printf("%ld", c);
 a = c - a;
-if (c == 1100087778366101931)
-continue;
 printf(",");
 printf(" ");
 }
