@@ -8,12 +8,12 @@
 int main(void)
 
 {
-unsigned long int c = 1, a = 0;
+unsigned long long int c = 1, a = 0;
 int i;
 for (i = 0; i <= 97; i++)
 {
 c = c + a;
-printf("%lu", c);
+printf("%llu", c);
 a = c - a;
 if (i != 97)
 {
