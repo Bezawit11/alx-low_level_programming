@@ -25,7 +25,8 @@ putchar(' ');
 putchar((t % 10) + '0');
 putchar((z % 10) + '0');
 putchar(',');
-if (f != 9 && s != 8)
+if (f == 9 && s == 8 && t == 9 && z == 9)
+continue;
 putchar(' ');
 }
 }
