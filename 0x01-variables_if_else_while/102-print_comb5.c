@@ -15,7 +15,7 @@ for (s = 0; s <= 8; s++)
 {	
 for (t = 0; t <= 9; t++)
 {
-for (z = 1; z <= 9; z++)
+for (z = 0; z <= 9; z++)
 {
 if ((s >= z && f == t) || (f > t))
 continue;
