@@ -37,7 +37,7 @@ printf(",");
 printf(" ");
 printf(" ");
 }
-else
+else if(f >= 90 && i >= 10)
 {
 printf("%d", f);
 printf(",");
