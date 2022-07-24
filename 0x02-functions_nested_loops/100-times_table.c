@@ -30,7 +30,7 @@ else if (j == n)
 {
 printf("%d\n", f);
 }
-else if (j >= 1 && i >= 10)
+else if (j >= 0 && i >= 10 && f < 100)
 {
 printf("%d", f);
 printf(",");
