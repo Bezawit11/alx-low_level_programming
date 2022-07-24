@@ -17,7 +17,7 @@ for (i = 0; i <= n; i++)
 for (j = 0; j <= n; j++)
 {
 f = i * j;
-if ((i <= 1 && j != n) || (i == 2 && j <= 3) || (i == 3 && j <= 2) || (j == 0) || (i == 4 && j <= 1))
+if ((i <= 1 && j != n) || (i == 2 && j <= 3) || (i == 3 && j <= 2) || (i <= 9 && j == 0) || (i == 4 && j <= 1))
 {
 printf("%d", f);
 if (f < n * n)
@@ -30,17 +30,17 @@ else if (j == n)
 {
 printf("%d\n", f);
 }
-else if (j >= 0 && i >= 10 && f < 100)
+else if (j >= 10 && i >= 9 && f >= 90)
 {
 printf("%d", f);
 printf(",");
-printf(" ");
 printf(" ");
 }
-else if(f >= 90 && i >= 10)
+else
 {
 printf("%d", f);
 printf(",");
+printf(" ");
 printf(" ");
 }
 }
