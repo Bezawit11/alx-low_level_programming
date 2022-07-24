@@ -20,6 +20,7 @@ f = i * j;
 if ((i <= 1 && j != n) || (i == 2 && j <= 3) || (i == 3 && j <= 2) || (j == 0) || (i == 4 && j <= 1))
 {
 printf("%d", f);
+if (i == n && j == n)
 printf(",");
 printf(" ");
 printf(" ");
