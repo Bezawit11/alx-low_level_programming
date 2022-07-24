@@ -35,12 +35,12 @@ else if (j >= 0 && i >= 10 && f < 100)
 printf("%d", f);
 printf(",");
 printf(" ");
+printf(" ");
 }
 else
 {
 printf("%d", f);
 printf(",");
-printf(" ");
 printf(" ");
 }
 }
