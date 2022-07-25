@@ -3,9 +3,9 @@
 #include "main.h"
 
 /**
- *
- *
- *
+ *_strdup - returns a pointer to copied str
+ *@str: string pointer
+ *Return: returns a pointer
  */
 char *_strdup(char *str)
 
@@ -19,7 +19,7 @@ size = size + 1;
 }
 chr = malloc((size) * sizeof(char) + 1);
 if (str == NULL || chr == 0)
-return (NULL);
+return (0);
 else
 {
 for (i = 0; i < size; i++)
