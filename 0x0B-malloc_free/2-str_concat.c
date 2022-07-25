@@ -37,7 +37,7 @@ size2 = size2 + 1;
 }
 }
 chr = malloc((size1 + size2) *sizeof(char) + 1);
-if (s1 == NULL && s2 = NULL)
+if (s1 == NULL && s2 == NULL)
 {
 return (0);
 }
