@@ -33,8 +33,8 @@ else
 {
 for (i = 0; i < size1; i++)
 chr[i] = s1[i];
-for (i = size1 + 1; i < size2; i++)
-chr[i] = s2[i];
+for (i = size1; i < size2; i++)
+chr[i] = s2[i - size1];
 }
 return (chr);
 }
