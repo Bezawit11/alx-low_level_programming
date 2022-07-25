@@ -22,7 +22,7 @@ return (0);
 }
 for (i = 0; i < height; i++)
 {
-chr[i] = malloc((width * sizeof(int));
+chr[i] = malloc(width * sizeof(int));
 }
 for (i = 0; i < height; i++)
 {
