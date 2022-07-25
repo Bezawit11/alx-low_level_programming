@@ -14,7 +14,7 @@ char *chr;
 int size1 = 0;
 int size2 = 0;
 int i;
-if (s1 == '\0')
+if (s1 == NULL)
 {
 size1 = 0;
 }
@@ -25,7 +25,7 @@ for (i = 0; s1[i] != '\0'; i++)
 size1 = size1 + 1;
 }
 }
-if (s2 == '\0')
+if (s2 == NULL)
 {
 size2 = 0;
 }
@@ -37,7 +37,7 @@ size2 = size2 + 1;
 }
 }
 chr = malloc((size1 + size2) *sizeof(char) + 1);
-if (chr == 1)
+if (s1 == NULL && s2 = NULL)
 {
 return (0);
 }
