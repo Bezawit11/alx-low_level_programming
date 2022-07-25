@@ -17,10 +17,6 @@ if (width <= 0 || height <= 0)
 {
 return (NULL);
 }
-if (width > INT_MAX || height > INT_MAX)
-{
-return (NULL);
-}
 if (chr == NULL)
 {
 free(chr);
