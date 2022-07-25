@@ -16,13 +16,15 @@ if (width <= 0 || height <= 0)
 {
 return (0);
 }
-if (chr == 0)
-{
-return (0);
-}
 for (i = 0; i < height; i++)
 {
 chr[i] = malloc(width * sizeof(int));
+}
+if (chr[i] == 0)
+{
+for (i = 0; i < height; i++)
+free (chr[i]);
+return (0);
 }
 for (i = 0; i < height; i++)
 {
