@@ -1,0 +1,31 @@
+#include <stdio.h>
+#include <stdlib.h>
+#include "main.h"
+
+/**
+ *
+ *
+ *
+ */
+int **alloc_grid(int width, int height)
+
+{
+int *chr;
+chr = malloc((width * height) * sizeof(char));
+if (width <= 0 || height <= 0)
+{
+return (0);
+}
+if (chr == 0)
+{
+return (0);
+}
+for (i = 0; i < h; i++)
+{
+for (j = 0; j < w; j++)
+{
+chr[i][j] = 0;
+}
+}
+return (chr);
+}
