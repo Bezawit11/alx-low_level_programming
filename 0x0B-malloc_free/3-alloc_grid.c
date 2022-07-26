@@ -29,12 +29,16 @@ chr[i] = malloc(width * sizeof(int));
 if (chr[i] == NULL)
 {
 for (i = 0; i < height; i++)
+{
 free(chr[i]);
+}
 free(chr);
 return (NULL);
 }
 for (j = 0; j <= width; j++)
+{
 chr[i][j] = 0;
+}
 }
 return (chr);
 }
