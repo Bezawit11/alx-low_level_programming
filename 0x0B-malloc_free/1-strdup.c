@@ -13,12 +13,16 @@ char *_strdup(char *str)
 char *chr;
 int size = 0;
 int i;
+if (str = NULL)
+{
+return (NULL);
+}
 for (i = 0; str[i] != '\0'; i++)
 {
 size = size + 1;
 }
 chr = malloc((size) *sizeof(char) + 1);
-if (str == 0 || chr == NULL)
+if (chr == 0)
 {
 return (NULL);
 }
