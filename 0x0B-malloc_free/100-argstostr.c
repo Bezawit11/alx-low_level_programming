@@ -15,7 +15,7 @@ int i;
 av = (char **) malloc(ac * sizeof(char));
 for (i = 0; i < ac; i++)
 {
-s[i] = av[i];
+s[i] = *(av + i);
 }
 return (s);
 }
