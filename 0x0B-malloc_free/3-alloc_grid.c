@@ -17,7 +17,7 @@ if (width <= 0 || height <= 0)
 {
 return (NULL);
 }
-chr = malloc(height * sizeof(int));
+chr = malloc(height * sizeof(int) + 1);
 if (chr == 0)
 {
 free(chr);
@@ -25,7 +25,7 @@ return (NULL);
 }
 for (i = 0; i < height; i++)
 {
-chr[i] = malloc(width * sizeof(int));
+chr[i] = malloc(width * sizeof(int) + 1);
 }
 if (chr[i] == NULL)
 {
