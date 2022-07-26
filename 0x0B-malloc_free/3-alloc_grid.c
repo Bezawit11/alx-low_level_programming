@@ -35,7 +35,7 @@ free(chr[i]);
 free(chr);
 return (NULL);
 }
-for (j = 0; j <= width; j++)
+for (j = 0; j < width; j++)
 {
 chr[i][j] = 0;
 }
