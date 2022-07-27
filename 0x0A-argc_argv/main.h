@@ -1,0 +1,1 @@
+int quo(int n);
