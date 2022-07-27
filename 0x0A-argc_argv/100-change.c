@@ -4,7 +4,7 @@
 #include "main.h"
 
 /**
- *qou - a recrusive function that finds min. no. coins
+ *quo - a recrusive function that finds min. no. coins
  *@n: amount of cents
  *Return: returns a value int
  */
