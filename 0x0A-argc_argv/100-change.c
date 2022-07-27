@@ -11,18 +11,19 @@
 int quo(int n)
 
 {
-int i, sum = 0;
+int i, a, b, h, sum = 0;
 int c[] = {25, 10, 5, 2, 1};
 for (i = 0; c[i] != '\0'; i++)
 {
-if  (n / c[i] > 0)
+h = c[i];
+if  (n / h > 0)
 break;
 }
-a = argv[1] / c[i];
-b = argv[1] % c[i];
-if (b == c[0] || b == c[1] || b == c[2] || b == c[3] || b == c[4])
+a = n / h;
+b = n % h;
+if (b == 25 || b == 10 || b == 5 || b == 2 || b == 1)
 {
-sum = a + b;
+sum = a + 1;
 return(sum);
 }
 else if (b == 0)
@@ -50,7 +51,7 @@ printf("Error\n");
 return (1);
 }
 a = atoi(argv[1]);
-if (n < 0)
+if (a < 0)
 {
 printf("0\n");
 }
