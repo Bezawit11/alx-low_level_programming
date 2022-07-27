@@ -56,5 +56,6 @@ if (a < 0)
 printf("0\n");
 }
 s = quo(a);
-return (s);
+printf("%d\n", s);
+return (0);
 }
