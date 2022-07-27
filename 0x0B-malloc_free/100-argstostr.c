@@ -25,7 +25,7 @@ for (j = 0; av[i][j] != '\0'; j++)
 {
 strl = strl + 1;
 }
-strl = strl + 1;
+/*strl = strl + 1;*/
 }
 for (i = 0; i < ac; i++)
 {
