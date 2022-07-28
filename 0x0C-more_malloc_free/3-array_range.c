@@ -17,10 +17,6 @@ if (min > max)
 {
 return (NULL);
 }
-/*if (min < 0 || max < 0)
-{
-return (NULL);
-}*/
 array = malloc(sizeof(int) * (max - min + 1));
 if (array == NULL)
 {
