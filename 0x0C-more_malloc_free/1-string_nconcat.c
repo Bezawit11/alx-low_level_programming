@@ -38,7 +38,7 @@ n = count2 + 0;
 p = (char*)malloc(sizeof(char) * (n + count1 + 1));
 if (p == NULL)
 {
-return (0);
+return (NULL);
 }
 for (i = 0; i < count1; i++)
 {
@@ -48,5 +48,6 @@ for (i = 0; i < n; i++)
 {
 *(p + count1 + i) = *(s2 + i);
 }
+p[n] = '\0';
 return (p);
 }
