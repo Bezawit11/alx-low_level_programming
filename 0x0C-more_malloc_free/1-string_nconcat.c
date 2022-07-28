@@ -37,7 +37,7 @@ for (i = 0; s2[i] != '\0'; i++)
 count2 = count2 + 1;
 }
 }
-if (n >= count2)
+if (n > count2)
 {
 n = count2 + 0;
 }
@@ -54,6 +54,6 @@ for (i = 0; i < n; i++)
 {
 *(p + count1 + i) = *(s2 + i);
 }
-p[n] = '\0';
+p[n + count1] = '\0';
 return (p);
 }
