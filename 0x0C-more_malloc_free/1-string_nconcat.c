@@ -25,10 +25,14 @@ s2 = "";
 }
 for (i = 0; s1[i] != '\0'; i++)
 {
+if (s1 == NULL)
+break;
 count1 = count1 + 1;
 }
 for (i = 0; s2[i] != '\0'; i++)
 {
+if (s2 == NULL)
+break;
 count2 = count2 + 1;
 }
 if (n >= count2)
