@@ -41,7 +41,7 @@ p = (char*)malloc(sizeof(char) * (n + count1 + 1));
 }
 if (p == NULL)
 {
-return (NULL);
+return (0);
 }
 for (i = 0; i < count1; i++)
 {
