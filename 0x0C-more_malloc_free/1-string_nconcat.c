@@ -41,7 +41,7 @@ if (n >= count2)
 {
 n = count2 + 0;
 }
-p = (char*)malloc(sizeof(char) * (n + count1 + 1));
+p = malloc(sizeof(char) * (n + count1 + 1));
 if (p == NULL)
 {
 return (NULL);

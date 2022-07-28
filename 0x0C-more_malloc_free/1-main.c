@@ -12,11 +12,9 @@ int main(void)
 
 {
 
-	    char *concat;
+	char *concat;
 
-
-
-	        concat = string_nconcat("Best ", "School !!!", 6);
+concat = string_nconcat("", "dd", 6);
 
 		    printf("%s\n", concat);
 
