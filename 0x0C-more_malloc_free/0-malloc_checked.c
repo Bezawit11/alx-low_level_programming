@@ -12,4 +12,5 @@ void *malloc_checked(unsigned int b)
 
 {
 unsigned int *c = malloc(b);
+return (c);
 }
