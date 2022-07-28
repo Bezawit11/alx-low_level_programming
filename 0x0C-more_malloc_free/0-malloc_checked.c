@@ -14,7 +14,7 @@ unsigned int *c = malloc(b);
 unsigned int n = 98;
 if (c == NULL)
 {
-return (n);
+exit(n);
 }
 else
 {
