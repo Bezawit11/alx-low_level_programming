@@ -16,7 +16,7 @@ unsigned int i;
 if (nmemb = 0 || size = 0)
 return (NULL);
 array = malloc(nmemb * size);
-if (array == 0)
+if (array == NULL)
 return (NULL);
 for (i = 0; i < nemb; i++)
 {
