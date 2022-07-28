@@ -31,14 +31,11 @@ for (i = 0; s2[i] != '\0'; i++)
 {
 count2 = count2 + 1;
 }
-if (n >= count2)
+if (n >= count)
 {
-p = (char*)malloc(sizeof(char) * (count1 + count2 + 1));
+n = count2 + 0;
 }
-else
-{
 p = (char*)malloc(sizeof(char) * (n + count1 + 1));
-}
 if (p == NULL)
 {
 return (0);
@@ -47,7 +44,7 @@ for (i = 0; i < count1; i++)
 {
 *(p + i) = *(s1 + i);
 }
-for (i = 0; i <= n; i++)
+for (i = 0; i < n; i++)
 {
 *(p + count1 + i) = *(s2 + i);
 }
