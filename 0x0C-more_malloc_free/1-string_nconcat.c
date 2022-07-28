@@ -26,7 +26,7 @@ for (i = 0; s1[i] != '\0'; i++)
 count1 = count1 + 1;
 }
 }
-if (s2 = NULL)
+if (s2 == NULL)
 {
 count2 = 0;
 }
