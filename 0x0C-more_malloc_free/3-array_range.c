@@ -23,8 +23,10 @@ return (NULL);
 }
 array = malloc(sizeof(int) * (max - min + 1));
 if (array == NULL)
+{
 return (NULL);
-for (i = 0; i < max - min + 1; i++)
+}
+for (i = 0; min <= max; i++)
 {
 array[i] = min;
 min++;
