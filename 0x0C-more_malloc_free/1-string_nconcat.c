@@ -47,7 +47,7 @@ for (i = 0; i < count1; i++)
 {
 *(p + i) = *(s1 + i);
 }
-for (i = 0; i < n; i++)
+for (i = 0; i <= n; i++)
 {
 *(p + count1 + i) = *(s2 + i);
 }
