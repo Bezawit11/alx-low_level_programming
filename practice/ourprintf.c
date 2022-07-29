@@ -23,7 +23,7 @@ c++;
 if (*c == 'd')
 v = va_arg(arg, int);
 putchar(v);
-if (*c == ''x')
+if (*c == 'x')
 v = va_arg(arg, 
 }
 }
