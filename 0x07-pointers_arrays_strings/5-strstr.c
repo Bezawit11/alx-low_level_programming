@@ -31,6 +31,8 @@ a = j;
 return (haystack + a);
 }
 }
+if (j == l2)
+break;
 b = 0;
 }
 return (NULL);
