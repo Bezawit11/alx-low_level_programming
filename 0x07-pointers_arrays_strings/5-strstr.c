@@ -32,8 +32,7 @@ return (haystack + a);
 }
 }
 if (j == l2)
-return (NULL);
-b = 0;
+break;
 }
 return (NULL);
 }
