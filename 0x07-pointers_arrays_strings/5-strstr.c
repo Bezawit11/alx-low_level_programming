@@ -11,10 +11,10 @@
 char *_strstr(char *haystack, char *needle)
 
 {
-int i, j, l1, l2, a, z;
+int i, j, l1, l2, a, z, b = 0;
 l1 = strlen(needle);
 l2 = strlen(haystack);
-for (i = 0; i < l1; i++)
+for (i = b; i < l1; i++)
 {
 for (j = 0; j < l2; j++)
 {
@@ -30,9 +30,8 @@ if (z == l1)
 a = j;
 return (haystack + a);
 }
-else
-i = 0;
 }
+b = 0;
 }
 return (NULL);
 }
