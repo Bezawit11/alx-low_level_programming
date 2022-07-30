@@ -11,35 +11,26 @@
 char *_strstr(char *haystack, char *needle)
 
 {
-int i, k, j, l1, l2, m = 0;
-char *r;
+int i, j, l1, l2, a, z;
 l1 = strlen(needle);
 l2 = strlen(haystack);
 for (i = 0; i < l1; i++)
 {
-for (j = m; j < l2 && i < l1; j++)
+for (j = 0; j < l2; j++)
 {
-if (*(needle + i) == *(haystack + j))
-i++;
-else
+if (needle[i] == haystack[j])
+a = j;
+for (z = 1; z < l1; z++)
+{
+if (needle[z] != haystack[z + j])
 break;
 }
-if (i == l1 - 1)
+if (z == l1)
 {
-k = j;
-break;
+a = j;
+return (haystack + a);
 }
-if (j == l2)
-{
-break;
 }
-i = 0;
-m = j;
 }
-if (j == l2)
-r = NULL;
-if (i == l1 - 1)
-printf("%d", k);
-r = (haystack + k - l1);
-return (r);
+return (NULL);
 }
