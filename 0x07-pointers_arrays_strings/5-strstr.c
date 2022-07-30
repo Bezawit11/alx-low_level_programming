@@ -30,6 +30,8 @@ if (z == l1)
 a = j;
 return (haystack + a);
 }
+else
+i = 0;
 }
 }
 return (NULL);
