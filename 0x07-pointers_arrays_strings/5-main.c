@@ -11,7 +11,7 @@ int main(void)
 
    char *s = "hello, woworld";
 
-   char *f = " ";
+   char *f = "";
 
 		    char *t;
 
