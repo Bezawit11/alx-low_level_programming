@@ -8,7 +8,7 @@
 int main(void)
 
 {
-unsigned long int n, i, a, b;
+unsigned long int n, i, a;
 for (n = 2; n <= 612852475143; n++)
 {
 for (i = 2; i <= n; i++)
@@ -21,11 +21,13 @@ if (n % i != 0)
 {
 continue;
 }
+/*a = n;*/
+if (612852475143 % n == 0)
 a = n;
-if (612852475143 % a == 0)
-b = a;
+/*b = a;
+printf("%lu", b);*/
 }
 }
-printf("%lu\n", b);
+printf("%lu", a);
 return (0);
 }
