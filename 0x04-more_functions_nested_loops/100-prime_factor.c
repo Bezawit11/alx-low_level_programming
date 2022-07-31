@@ -1,15 +1,15 @@
 #include <stdio.h>
 
 /**
- *
- *  
- *
+ *main - prints largest prime factor
+ *Return: returns an int
  */
 int main(void)
 
 {
-unsigned long int n, i, a;
-for (n = 2; n <= 612852475143; n++)
+unsigned int long n, i, a, b;
+unsigned int long d = 612852475143;
+for (n = 2; n <= d; n++)
 {
 for (i = 2; i <= n; i++)
 {
@@ -21,13 +21,11 @@ if (n % i != 0)
 {
 continue;
 }
-/*a = n;*/
-if (612852475143 % n == 0)
 a = n;
-/*b = a;
-printf("%lu", b);*/
+if (d % n == 0)
+b = a;
 }
 }
-printf("%lu", a);
+printf("%lu\n", b);
 return (0);
 }
