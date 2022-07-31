@@ -24,6 +24,7 @@ continue;
 a = n;
 if (d % n == 0)
 b = a;
+printf("%lu", b);
 }
 }
 printf("%lu\n", b);
