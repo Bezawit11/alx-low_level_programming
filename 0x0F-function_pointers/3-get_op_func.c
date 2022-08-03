@@ -1,6 +1,5 @@
 #include <stdio.h>
 #include "3-calc.h"
-#include "function_pointers.h"
 
 /**
  *get_op_func - returns a pointer to a function
@@ -22,13 +21,8 @@ op_t ops[] =
 int i = 0;
 while (i <= 5)
 {
-if (*(ops[i].op) == *s)
-break;
+if (*(ops[i].op) != *s && ops[i].op != NULL)
 i++;
 }
-if (ops[i].op == NULL)
-{
-return (NULL);
-}
-return(ops[i].f);
+return (ops[i].f);
 }
