@@ -16,7 +16,7 @@ va_list p;
 va_start(p, n);
 for (i = 0; i < n; i++)
 {
-printf("%i", va_arg(p, unsigned int);
+printf("%i", va_arg(p, unsigned int));
 if (i != n - 1 && separator != NULL)
 printf("%s", separator);
 }
