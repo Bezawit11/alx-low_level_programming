@@ -17,7 +17,7 @@ char *a;
 va_start(p, n);
 for (i = 0; i < n; i++)
 {
-a = va_arg(p, char);
+a = va_arg(p, char*);
 if (a != NULL)
 printf("%s", a);
 else
