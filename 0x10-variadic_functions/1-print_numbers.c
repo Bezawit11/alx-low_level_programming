@@ -18,7 +18,6 @@ for (i = 0; i < n; i++)
 {
 printd("%i", va_arg(p, unsigned int);
 if (i != n - 1 && separator != NULL)
-break;
 printf("%s", separator);
 }
 va_end(p);
