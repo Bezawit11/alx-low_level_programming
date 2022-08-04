@@ -1,4 +1,3 @@
-#include <stdio.h>
 #include <stdarg.h>
 #include "variadic_functions.h"
 
@@ -17,7 +16,7 @@ return (0);
 va_start(args, n);
 for (a = 0; a < n; a++)
 {
-sum = sum + va_arg(args, int);
+sum = sum + va_arg(args, unsigned int);
 }
 va_end(args);
 return (sum);
