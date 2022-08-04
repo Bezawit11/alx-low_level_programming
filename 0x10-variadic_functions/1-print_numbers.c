@@ -16,10 +16,11 @@ va_list p;
 va_start(p, n);
 for (i = 0; i < n; i++)
 {
-d = va_arg(p, unsigned int);
-if (i == n - 1)
+printd("%i", va_arg(p, unsigned int);
+if (i == n - 1 || separator == NULL)
 break;
-printf("%i%s", d, separator);
+printf("%s", separator);
 }
 va_end(p);
+printf("\n");
 }
