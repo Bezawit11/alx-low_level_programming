@@ -4,7 +4,7 @@
 /**
  *get_op_func - returns a pointer to a function
  *@s: operator passed as an argument
- *Return: returns int value
+ *Return: returns function pointers
  */
 int (*get_op_func(char *s))(int, int)
 
@@ -21,7 +21,7 @@ op_t ops[] =
 int i = 0;
 while (i < 6)
 {
-if (*(ops[i].op) == *s)
+if (*(ops[i].op) == *s || i == 5)
 break;
 i++;
 }
