@@ -5,6 +5,8 @@
 
 /**
  *main - check the code
+ *@argc: argument count
+ *@argv: arg variable
  *Return: Always 0.
  */
 int main(int argc, char **argv)
