@@ -20,12 +20,7 @@ exit(98);
 a = atoi(argv[1]);
 b = atoi(argv[3]);
 s = argv[2];
-if (*s != '+' && *s != '-' && *s != '*' && *s != '/' && *s != '%')
-{
-printf("Error\n");
-exit(99);
-}
-if (get_op_func(argv[2]) == NULL || strlen(s) != 1)
+if ((*s != '+' && *s != '-' && *s != '*' && *s != '/' && *s != '%') || get_op_func(argv[2]) == NULL || strlen(s) != 1)
 {
 printf("Error\n");
 exit(99);
