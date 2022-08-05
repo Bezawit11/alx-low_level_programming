@@ -21,7 +21,7 @@ op_t ops[] =
 int i = 0;
 while (i < 6)
 {
-if (*(ops[i].op) != *s)
+if (*(ops[i].op) == *s)
 break;
 i++;
 }
