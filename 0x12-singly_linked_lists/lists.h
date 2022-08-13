@@ -1,4 +1,4 @@
-#ifndef lINKED_LIST
+#ifndef LINKED_LIST
 #define LINKED_LIST
 typedef struct list_s
 
