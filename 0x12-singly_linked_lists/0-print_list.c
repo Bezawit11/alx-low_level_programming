@@ -6,7 +6,6 @@
 /**
  *print_list - prinys all the elements
  *@h: node pointer
- *@list_t: node list
  *Return: returns size
  */
 size_t print_list(const list_t *h)
