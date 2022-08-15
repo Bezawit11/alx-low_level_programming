@@ -14,9 +14,11 @@ int n;
 listint_t *temp;
 temp = malloc(sizeof(listint_t));
 if (temp == NULL)
-return (NULL);
+{
+return (0);
+}
 temp = *head;
-head = temp->next;
+(*head) = (*head)->next;
 n = temp->n;
 return (n);
 }
