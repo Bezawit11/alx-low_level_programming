@@ -10,6 +10,7 @@
  *Return: returns node pointer
  */
 list_t *add_node_end(list_t **head, const char *str)
+
 {
 list_t *new, *temp;
 unsigned int l = 0;
@@ -31,7 +32,7 @@ if (*head == NULL)
 return (new);
 }
 temp = *head;
-while(temp->next != NULL)
+while (temp->next != NULL)
 {
 temp = temp->next;
 }
