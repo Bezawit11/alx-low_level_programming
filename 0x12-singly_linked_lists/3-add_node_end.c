@@ -12,9 +12,11 @@
 list_t *add_node_end(list_t **head, const char *str)
 
 {
-list_t *new;
+list_t *new, *temp;
 unsigned int l = 0;
-while (str[l])
+if (str == NULL)
+return (NULL);
+while (str[l] != '\0')
 {
 l++;
 }
@@ -24,6 +26,16 @@ return (NULL);
 new->str = strdup(str);
 new->next = NULL;
 new->len = l;
+if (*head == NULL)
+{
 *head = new;
-return (*head);
+return (new);
+}
+temp = *head;
+while(temp->next != NULL)
+{
+temp = temp->next;
+}
+temp->next = new;
+return (new);
 }

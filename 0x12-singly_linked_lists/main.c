@@ -10,11 +10,11 @@
 int main(void)
 
 {
-
-	    list_t *head;
-	        head = NULL;
-
-		    add_node(&head, "Alexandro");
-		    print_list(head);
-		    return (0);
+list_t *head;
+head = NULL;
+add_node_end(&head, "Alexandro");
+add_node_end(&head, "Anne");
+add_node_end(&head, "Colton");
+print_list(head);
+return (0);
 }
