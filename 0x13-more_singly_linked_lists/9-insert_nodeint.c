@@ -33,10 +33,10 @@ temp->next = new;
 }
 else
 {
-new->next = temp;
+new->next = *head;
 new->n = n;
-temp = new;
-return (new);
+*head = new;
+return (*head);
 }
 return (new);
 }
