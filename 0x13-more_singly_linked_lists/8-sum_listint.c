@@ -15,9 +15,9 @@ listint_t *temp;
 temp = head;
 while (temp->next != NULL)
 {
-temp = temp->next;
 i = temp->n;
 s = s + i;
+temp = temp->next;
 }
 return (s);
 }
