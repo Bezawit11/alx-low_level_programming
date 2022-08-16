@@ -19,7 +19,7 @@ return (-1);
 if (index == 0)
 {
 *head = temp->next;
-return (-1);
+return (1);
 }
 while (i < index)
 {
