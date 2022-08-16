@@ -16,17 +16,27 @@ listint_t *temp, *new;
 temp = *head;
 if (temp == NULL)
 return (NULL);
-new = malloc(sizeof(listint_t));
-if (new == NULL)
-return (NULL);
 for (i = 1; i < idx; i++)
 {
 temp = temp->next;
-}
 if (temp == NULL)
 return (NULL);
+}
+new = malloc(sizeof(listint_t));
+if (new == NULL)
+return (NULL);
+if (idx != 0)
+{
 new->next = temp->next;
 new->n = n;
 temp->next = new;
+}
+else
+{
+new->next = temp;
+new->n = n;
+temp = new;
+return (new);
+}
 return (new);
 }
