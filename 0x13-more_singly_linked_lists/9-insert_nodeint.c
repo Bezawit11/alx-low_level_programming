@@ -23,6 +23,8 @@ for (i = 1; i < idx; i++)
 {
 temp = temp->next;
 }
+if (temp == NULL)
+return (NULL);
 new->next = temp->next;
 new->n = n;
 temp->next = new;
