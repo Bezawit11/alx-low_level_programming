@@ -19,6 +19,7 @@ for (i = 0; i < idx; i++)
 temp = temp->next;
 }
 new->next = temp->next;
+new->n = n;
 temp->next = new;
 return (new);
 }
