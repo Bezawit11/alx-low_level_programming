@@ -36,5 +36,7 @@ temp = temp->next;
 }
 prev->next = temp->next;
 *head = prev;
+free(prev);
+free(temp);
 return (1);
 }
