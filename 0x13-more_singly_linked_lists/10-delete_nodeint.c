@@ -22,12 +22,11 @@ return (1);
 }
 while (i < index)
 {
-temp = temp->next;
+temp->next = temp->next->next;
 if (temp == NULL)
 {
 return (-1);
 }
 }
-temp->next = temp->next->next;
 return (1);
 }
