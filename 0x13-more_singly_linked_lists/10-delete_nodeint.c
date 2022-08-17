@@ -23,7 +23,6 @@ if (index == 0)
 {
 if (temp->next == NULL)
 {
-*head = NULL;
 free(temp);
 return (-1);
 }
