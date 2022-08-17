@@ -4,8 +4,9 @@
 #include "lists.h"
 
 /**
- *
- *
+ *pop_listint - deletes the head node
+ *@head: linked list
+ *Return: head node's data
  */
 int pop_listint(listint_t **head)
 
