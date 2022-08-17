@@ -37,7 +37,14 @@ return (-1);
 temp = temp->next;
 --index;
 }
+if (temp->next->next != NULL)
+{
 temp->next = temp->next->next;
+}
+else 
+{
+temp->next = NULL;
+}
 free(temp);
 return (1);
 }
