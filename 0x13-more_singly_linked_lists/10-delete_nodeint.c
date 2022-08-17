@@ -35,3 +35,4 @@ temp = temp->next;
 prev->next = temp->next;
 *head = prev;
 return (1);
+}
