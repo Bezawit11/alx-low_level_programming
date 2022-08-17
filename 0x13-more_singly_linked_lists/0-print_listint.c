@@ -4,7 +4,7 @@
 #include "lists.h"
 
 /**
- *print_listint - a function that prints all the elements 
+ *print_listint - prints all the elements 
  *@h: node pointer
  *Return: returns the number of nodes
  */
