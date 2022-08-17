@@ -31,7 +31,14 @@ if (temp->next == NULL)
 return (-1);
 temp = temp->next;
 }
-temp->next = temp->next->next;  
+if (temp->next->next == NULL)
+{
+*head = temp;
+}
+else
+{
+temp->next = temp->next->next;
+}
 free(temp);
 return (1);
 }
