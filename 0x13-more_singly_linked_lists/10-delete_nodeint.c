@@ -34,7 +34,7 @@ return (-1);
 }
 i++;
 }
-temp->next = temp->next->next;
+(*head)->next = temp->next->next;
 free(temp);
 return (1);
 }
