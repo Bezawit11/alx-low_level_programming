@@ -23,6 +23,7 @@ if (temp->next == NULL)
 {
 *head = NULL;
 }
+}
 else 
 {
 *head = temp->next;
