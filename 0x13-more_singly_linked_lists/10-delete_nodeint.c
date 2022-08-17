@@ -37,15 +37,12 @@ if (temp->next == NULL)
 {
 return (-1);
 }
-temp = temp->next;
-if (temp->next == NULL)
+if (temp->next->next == NULL)
 {
-*head = temp;
-return (1);
+break;
 }
 index = index - 1;
-}
-  
+} 
 if (temp->next->next != NULL)
 {
 temp->next = temp->next->next;
