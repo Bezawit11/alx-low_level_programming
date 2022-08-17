@@ -19,7 +19,7 @@ if (*head == NULL)
 {
 return (-1);
 }
-if (index == 0 && *head != NULL)
+if (index == 0 && (*head)->next != NULL)
 {
 *head = temp->next;
 free(temp);
