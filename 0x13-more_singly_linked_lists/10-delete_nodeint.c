@@ -29,14 +29,16 @@ else
 free(temp);
 return (1);
 }
-while (index >= 1)
+if (index == 1)
+{
+while (index != 1)
 {
 if (temp->next == NULL)
 {
 return (-1);
 }
 temp = temp->next;
---index;
+index--;
 }
 if (temp->next->next != NULL)
 {
