@@ -18,7 +18,9 @@ return (-1);
 if (index == 0)
 {
 if (temp->next == NULL)
+{
 *head = NULL;
+}
 else
 {
 *head = temp->next;
@@ -26,23 +28,16 @@ else
 free(temp);
 return (1);
 }
-if (index == 1)
-{
-temp->next = temp->next->next;
-}
-else
-{
-while (index > 1)
+while (index > 0)
 {
 if (temp->next == NULL)
 {
 return (-1);
 }
 temp = temp->next;
-index--;
+--index;
 }
-}
-(*head)->next = temp->next->next;
+temp->next = temp->next->next;
 free(temp);
 return (1);
 }
