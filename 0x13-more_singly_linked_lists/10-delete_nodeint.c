@@ -31,7 +31,9 @@ return (1);
 for (i = 0; i < index; i++)
 {
 if (temp->next == NULL)
+{
 return (-1);
+}
 prev = temp;
 temp = temp->next;
 }
