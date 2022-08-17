@@ -38,6 +38,7 @@ if (temp->next->next == NULL)
 else
 {
 temp->next = temp->next->next;
+*head = temp;
 }
 free(temp);
 return (1);
