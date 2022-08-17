@@ -4,8 +4,9 @@
 #include "lists.h"
 
 /**
- *
- *
+ *sum_listint -  returns the sum of all the data (n)
+ *@head: linked list
+ *Return: sum of data
  */
 int sum_listint(listint_t *head)
 
