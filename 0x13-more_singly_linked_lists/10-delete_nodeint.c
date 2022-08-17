@@ -23,11 +23,10 @@ if (index == 0)
 {
 if (temp->next == NULL)
 {
-free(temp);
 return (-1);
 }
 *head = temp->next;
-free (temp);
+free(temp);
 return (1);
 }
 for (i = 0; i < index; i++)
