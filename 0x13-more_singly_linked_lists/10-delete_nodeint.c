@@ -32,6 +32,7 @@ if (temp == NULL)
 {
 return (-1);
 }
+i++;
 }
 temp->next = temp->next->next;
 free(temp);
