@@ -18,6 +18,7 @@ temp = *head;
 if (index == 0)
 {
 *head = temp->next;
+free(temp);
 return (1);
 }
 while (i < index)
