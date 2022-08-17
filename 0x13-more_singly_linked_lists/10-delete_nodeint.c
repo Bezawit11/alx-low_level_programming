@@ -22,7 +22,11 @@ temp = *head;
 if (index == 0)
 {
 if (temp->next == NULL)
+{
+*head = NULL;
+free(temp);
 return (-1);
+}
 *head = temp->next;
 free (temp);
 return (1);
