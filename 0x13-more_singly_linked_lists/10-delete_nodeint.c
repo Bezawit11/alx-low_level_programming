@@ -29,7 +29,7 @@ else
 free(temp);
 return (1);
 }
-while (index != 1)
+while (index >= 1)
 {
 if (temp->next == NULL)
 {
