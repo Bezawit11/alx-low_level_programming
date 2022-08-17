@@ -43,10 +43,12 @@ index--;
 if (temp->next->next != NULL)
 {
 temp->next = temp->next->next;
+*head = temp;
 }
 else 
 {
 temp->next = NULL;
+*head = temp;
 }
 free(temp);
 return (1);
