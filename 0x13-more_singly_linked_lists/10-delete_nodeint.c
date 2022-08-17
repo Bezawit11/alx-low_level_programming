@@ -31,15 +31,21 @@ else
 free(temp);
 return (1);
 }
-while (index != 1)
+while (index != 0)
 {
 if (temp->next == NULL)
 {
 return (-1);
 }
 temp = temp->next;
-index--;
+if (temp->next == NULL)
+{
+*head = temp;
+return (1);
 }
+index = index - 1;
+}
+  
 if (temp->next->next != NULL)
 {
 temp->next = temp->next->next;
