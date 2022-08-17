@@ -21,9 +21,11 @@ return (-1);
 temp = *head;
 if (index == 0)
 {
+if (temp->next == NULL)
+return (-1);
 *head = temp->next;
 free (temp);
-return (-1);
+return (1);
 }
 for (i = 0; i < index; i++)
 {
