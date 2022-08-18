@@ -4,7 +4,7 @@
 #include "lists.h"
 
 /**
- *free_listint - frees a listint_t
+ *free_list - frees a list_t
  *@head: linked list
  *Return: void
  */
