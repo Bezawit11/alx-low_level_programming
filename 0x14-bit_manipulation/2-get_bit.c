@@ -18,7 +18,8 @@ r = 1;
 if (n > 0)
 {
 r = n % 2;
-get_bit(n / 2, index - 1);
+get_bit(n / 2, index);
+index = index - 1;
 if (index == 0)
 {
 b = r;
