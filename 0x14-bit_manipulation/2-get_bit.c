@@ -12,19 +12,23 @@ int get_bit(unsigned long int n, unsigned int index)
 
 {
 unsigned long int r;
-int b, m = 0;
+unsigned int m;
+int b;
 if (n == 1)
+{
 r = 1;
+m = 0;
+}
 if (n > 0)
 {
 r = n % 2;
 get_bit(n / 2, index);
-m++;
 if (index == m)
 {
 b = r;
 return (b);
 }
+m++;
 }
 return (-1);
 }
