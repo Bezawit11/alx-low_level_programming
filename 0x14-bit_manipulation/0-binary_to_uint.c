@@ -17,6 +17,8 @@ return (0);
 c = b;
 while (*b != '\0')
 {
+if (*b != '0' && *b != '1')
+return (0);
 i = i + 1;
 b++;
 }
@@ -50,6 +52,7 @@ return (0);
 }
 c++;
 i--;
+p = 1;
 }
 return (dec);
 }
