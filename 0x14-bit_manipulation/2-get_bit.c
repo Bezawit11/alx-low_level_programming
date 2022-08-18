@@ -21,11 +21,12 @@ m = 0;
 if (n > 0)
 {
 r = n % 2;
+m++;
 get_bit(n / 2, index);
 if (index == m)
 {
 return (r);
 }
-m++;
 }
+return (-1);
 }
