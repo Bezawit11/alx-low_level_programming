@@ -31,7 +31,7 @@ while (j > 0)
 p = p * 2;
 j--;
 }
-dec = dec + (1 * (2 * p));
+dec = dec + (1 * p);
 }
 else if (*c == '0')
 {
