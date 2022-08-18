@@ -17,18 +17,17 @@ int b;
 if (n == 1)
 {
 r = 1;
-m = 0;
 }
 if (n > 0)
 {
 r = n % 2;
 get_bit(n / 2, index);
-if (index == m)
+index = index - 1;
+if (index == 0)
 {
 b = r;
 return (b);
 }
-m++;
 }
 return (-1);
 }
