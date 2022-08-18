@@ -19,11 +19,15 @@ if (n > 0)
 {
 r = n % 2;
 get_bit(n / 2, index);
+if (index != 0)
+{
 index = index - 1;
+}
 if (index == 0)
 {
 b = r;
-}
-}
 return (b);
+}
+}
+return (-1);
 }
