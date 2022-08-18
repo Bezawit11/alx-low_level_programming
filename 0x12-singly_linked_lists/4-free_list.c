@@ -4,7 +4,7 @@
 #include "lists.h"
 
 /**
- *free_listint - frees a listint_t
+ *free_list - frees a list_t
  *@head: linked list
  *Return: void
  */
@@ -16,6 +16,7 @@ s = head;
 while (s != NULL)
 {
 d = s->next;
+free(s->str);
 free(s);
 s = d;
 }
