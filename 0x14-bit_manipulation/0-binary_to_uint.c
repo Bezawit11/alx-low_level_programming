@@ -10,7 +10,7 @@
 unsigned int binary_to_uint(const char *b)
 
 {
-unsigned int i = 0, j, p = 0, dec = 0;
+unsigned int i = 0, j, p = 1, dec = 0;
 const char *c;
 if (b == NULL)
 return (0);
@@ -21,12 +21,19 @@ i = i + 1;
 b++;
 }
 i = i - 1;
+if (i == 0)
+{
+if (*c == '0')
+return (0);
+if (*c == '1')
+return (1);
+}
 while (*c != '\0')
 {
 j = i;
 if (*c == '1')
 {
-while (j >= 0)
+while (j > 0)
 {
 p = p * 2;
 j--;
