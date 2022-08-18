@@ -23,6 +23,11 @@ if (index != 0)
 {
 index = index - 1;
 }
+if (index == 1)
+{
+b = r;
+return (b);
+}
 if (index == 0)
 {
 b = r;
