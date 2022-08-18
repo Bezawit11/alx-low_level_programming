@@ -18,6 +18,11 @@ if (n == 1)
 {
 r = 1;
 m = 0;
+if (index == m)
+{
+b = r;
+return (b);
+}
 }
 if (n > 0)
 {
