@@ -16,6 +16,7 @@ s = head;
 while (s != NULL)
 {
 d = s->next;
+free(s->str);
 free(s);
 s = d;
 }
