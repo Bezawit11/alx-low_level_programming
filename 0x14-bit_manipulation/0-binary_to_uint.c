@@ -3,9 +3,9 @@
 #include "main.h"
 
 /**
- *
- *
- *
+ *binary_to_uint - converts a binary number to an unsigned int
+ *@b: binary number
+ *Return: returns converted decimal
  */
 unsigned int binary_to_uint(const char *b)
 
@@ -35,17 +35,14 @@ while (*c != '\0')
 j = i;
 if (*c == '1')
 {
-while (j > 0)
+for (j = j + 0; j > 0; j--)
 {
 p = p * 2;
-j--;
 }
 dec = dec + (1 * p);
 }
 else if (*c == '0')
-{
 dec = dec + (0);
-}
 else
 {
 return (0);
