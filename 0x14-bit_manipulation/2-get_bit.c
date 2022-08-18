@@ -22,12 +22,12 @@ m = 0;
 if (n > 0)
 {
 r = n % 2;
-m++;
 if (index == m)
 {
 b = r;
 return (b);
 }
+m++;
 get_bit(n / 2, index);
 }
 return (-1);
