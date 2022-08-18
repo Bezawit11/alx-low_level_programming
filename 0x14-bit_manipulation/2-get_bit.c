@@ -12,7 +12,6 @@ int get_bit(unsigned long int n, unsigned int index)
 {
 unsigned long int r;
 int b;
-char a;
 if (n == 1)
 r = 1;
 if (n > 0)
@@ -23,8 +22,6 @@ if (index == 0)
 {
 b = r;
 }
-a = r + '0';
-_putchar(a);
 }
 return (b);
 }
