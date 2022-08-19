@@ -11,8 +11,8 @@ int set_bit(unsigned long int *n, unsigned int index)
   
 {
 unsigned long int r, *h, k, m;
-unsigned int j = 0, i, l = 0;
-int p = 1, sum = 0;
+unsigned long int j = 0, i, l = 0;
+unsigned long int p = 1, sum = 0;
 h = n;
 k = *h;
 m = k;
@@ -44,5 +44,5 @@ j--;
 l++;
 }
 printf("%d", sum);
-return (sum);
+return (1);
 }
