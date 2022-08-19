@@ -20,7 +20,7 @@ j = j + 1;
 h = h / 2;
 }
 j--;
-if (index >= 19)
+if (index > 63)
 {
 return (-1);
 }
