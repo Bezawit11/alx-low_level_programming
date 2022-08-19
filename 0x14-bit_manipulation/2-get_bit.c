@@ -19,11 +19,11 @@ while (h != 0)
 j = j + 1;
 h = h / 2;
 }
-j--;
 if (index > j)
 {
 return (-1);
 }
+j--;
 j = j - index;
 while (n != 0)
 {
