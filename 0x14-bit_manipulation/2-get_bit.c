@@ -21,9 +21,9 @@ h = h / 2;
 }
 j--;
 if (index > 63)
-{
 return (-1);
-}
+if (index > j && index < 63)
+return (0);
 j = j - index;
 while (n != 0)
 {
