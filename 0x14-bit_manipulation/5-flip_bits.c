@@ -10,18 +10,12 @@
 unsigned int flip_bits(unsigned long int n, unsigned long int m)
 
 {
-  
-unsigned int f = 0;  
-while(a > 0 || b > 0)
+unsigned int count = 0;
+unsigned long int h = n ^ m;
+while (h > 0)
 {
-int t1 = (n&1);
-int t2 = (m&1);
-if(t1 != t2)
-{
-f++;
+count++;
+h &= (h - 1);
 }
-n>>=1;
-m>>=1;
-}
-return (f);
+return (count);
 } 
