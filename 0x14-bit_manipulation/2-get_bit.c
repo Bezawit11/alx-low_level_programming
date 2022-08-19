@@ -29,11 +29,10 @@ while (n != 0)
 {
 if (j == 0)
 {
-break;
+return (r);
 }
 r = n % 2;
 n = n / 2;
 j--;
 }
-return (r);
 }
