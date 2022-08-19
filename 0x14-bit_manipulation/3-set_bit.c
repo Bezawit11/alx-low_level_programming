@@ -43,5 +43,6 @@ index--;
 j--;
 l++;
 }
+printf("%d", sum);
 return (sum);
 }
