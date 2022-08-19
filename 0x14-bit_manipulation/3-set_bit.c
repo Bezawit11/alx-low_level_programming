@@ -44,6 +44,6 @@ j--;
 l++;
 p = 1;
 }
-printf("%d", sum);
+printf("%ld", sum);
 return (1);
 }
