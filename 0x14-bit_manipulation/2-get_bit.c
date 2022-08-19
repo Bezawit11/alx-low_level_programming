@@ -31,8 +31,8 @@ if (j == index)
 {
 break;
 }
-/*n = n / 2;
-j--;*/
+n = n / 2;
+j--;
 }
 return (r);
 }
