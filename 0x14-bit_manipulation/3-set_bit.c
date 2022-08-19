@@ -8,10 +8,9 @@
 int set_bit(unsigned long int *n, unsigned int index)
   
 {
-unsigned long int *r, h;
+unsigned long int r, h;
 unsigned int j = 0;
-r = n;
-h = *r;
+h = *n;
 while (h != 0)
 {
 j = j + 1;
