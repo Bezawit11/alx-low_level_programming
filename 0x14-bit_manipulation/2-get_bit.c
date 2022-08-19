@@ -19,6 +19,10 @@ while (h != 0)
 j = j + 1;
 h = h / 2;
 }
+if (index >= j)
+{
+return (-1);
+}
 while (n != 0)
 {
 r = n % 2;
