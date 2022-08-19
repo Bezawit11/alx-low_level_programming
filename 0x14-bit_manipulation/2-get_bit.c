@@ -21,7 +21,7 @@ h = h / 2;
 }
 if (index > j)
 {
-return (1);
+return (-1);
 }
 j--;
 j = j - index;
