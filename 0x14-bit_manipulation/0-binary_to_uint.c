@@ -8,7 +8,6 @@
  *Return: returns converted decimal
  */
 unsigned int binary_to_uint(const char *b)
-
 {
 unsigned int i = 0, j, p = 1, dec = 0;
 const char *c;
@@ -23,13 +22,10 @@ i = i + 1;
 b++;
 }
 i = i - 1;
-if (i == 0)
-{
-if (*c == '0')
+if (i == 0 && *c == '0')
 return (0);
-if (*c == '1')
+if (i == 0 && *c == '1')
 return (1);
-}
 while (*c != '\0')
 {
 j = i;

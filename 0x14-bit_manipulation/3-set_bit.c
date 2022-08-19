@@ -37,7 +37,7 @@ for (i = 0; i < index ; i++)
 {
 p = p * 2;
 }
-sum = sum + (1 *p);
+sum = sum + p;
 }
 while (m != 0)
 {
