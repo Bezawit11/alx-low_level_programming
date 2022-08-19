@@ -28,12 +28,12 @@ j = j - index;
 while (n != 0)
 {
 r = n % 2;
+n = n / 2;
+j--;
 if (j == 0)
 {
 break;
 }
-n = n / 2;
-j--;
 }
 return (r);
 }
