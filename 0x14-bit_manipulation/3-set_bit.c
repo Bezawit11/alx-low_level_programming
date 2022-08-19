@@ -10,12 +10,23 @@
 int set_bit(unsigned long int *n, unsigned int index)
   
 {
-unsigned long int r, *h, k, m;
-unsigned long int j = 0, i, l = 0;
+unsigned long int r, *h, k, m, j = 0, i, l = 0;
 unsigned long int p = 1, sum = 0;
+if (n == NULL)
+return (-1);
 h = n;
 k = *h;
 m = k;
+if (k == 0)
+{
+for (i = 0; i <= index ; i++)
+{
+p = p * 2;
+}
+sum = sum + (1 * p);
+*n = sum;
+return (1);
+}
 while (k != 0)
 {
 j = j + 1;
