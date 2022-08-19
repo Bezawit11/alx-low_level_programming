@@ -38,7 +38,7 @@ for (i = 0; i < l ; i++)
 {
 p = p * 2;
 }
-sum = sum + (r * p);
+sum = sum + (r *p);
 m = m / 2;
 index--;
 j--;
