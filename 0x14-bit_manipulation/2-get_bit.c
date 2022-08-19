@@ -24,7 +24,7 @@ if (index > j)
 {
 return (-1);
 }
-j = j - b;
+j = j - index;
 while (n != 0)
 {
 r = n % 2;
