@@ -11,7 +11,7 @@ int set_bit(unsigned long int *n, unsigned int index)
   
 {
 unsigned long int r, *h, k, m;
-unsigned int j = 0;
+unsigned int j = 0, i, l = 0;
 int p = 1, sum = 0;
 h = n;
 k = *h;
@@ -33,7 +33,7 @@ if (index == 0)
 {
 r = 1;
 }
-for (j = j + 0; j > 0; j--)
+for (i = 0; i < l ; i++)
 {
 p = p * 2;
 }
@@ -41,6 +41,7 @@ sum = sum + (r * p);
 m = m / 2;
 index--;
 j--;
+l++;
 }
 return (sum);
 }
