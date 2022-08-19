@@ -10,7 +10,8 @@
 int set_bit(unsigned long int *n, unsigned int index)
   
 {
-unsigned long int r, *h, k, m, j = 0, i, l = 0;
+unsigned long int r, *h, k, m, j = 0;
+unsigned int i, l = 0;
 unsigned long int p = 1, sum = 0;
 if (n == NULL)
 return (-1);
