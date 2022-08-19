@@ -8,14 +8,11 @@
  *Return: 1 if it worked, or -1 if an error occurred
  */
 int clear_bit(unsigned long int *n, unsigned int index)
-
 {
-unsigned long int r, *h, k, m, j = 0, i, l = 0;
-unsigned long int p = 1, sum = 0;
+unsigned long int r, k, m, j = 0, i, l = 0, p = 1, sum = 0;
 if (n == NULL)
 return (-1);
-h = n;
-k = *h;
+k = *n;
 m = k;
 if (k == 0)
 {
