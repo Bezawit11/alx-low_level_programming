@@ -24,10 +24,11 @@ if (index > j)
 {
 return (-1);
 }
+j = j - b;
 while (n != 0)
 {
 r = n % 2;
-if (j == index)
+if (j == 0)
 {
 break;
 }
