@@ -42,6 +42,7 @@ m = m / 2;
 index--;
 j--;
 l++;
+p = 1;
 }
 printf("%d", sum);
 return (1);
