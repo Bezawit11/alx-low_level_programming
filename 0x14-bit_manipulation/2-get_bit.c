@@ -19,6 +19,7 @@ while (h != 0)
 j = j + 1;
 h = h / 2;
 }
+j--;
 if (index > j)
 {
 return (-1);
@@ -30,8 +31,8 @@ if (j == index)
 {
 break;
 }
-n = n / 2;
-j--;
+/*n = n / 2;
+j--;*/
 }
 return (r);
 }
