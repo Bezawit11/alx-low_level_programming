@@ -42,7 +42,7 @@ for (i = 0; i < index ; i++)
 {
 p = p * 2;
 }
-sum = sum + (r *p);
+sum = sum + (1 *p);
 }
 while (m != 0)
 {
