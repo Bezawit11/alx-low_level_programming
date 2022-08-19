@@ -28,7 +28,7 @@ j = j + 1;
 k = k / 2;
 }
 j--;
-if (index > j)
+if (index > 63)
 return (-1);
 while (m != 0)
 {
