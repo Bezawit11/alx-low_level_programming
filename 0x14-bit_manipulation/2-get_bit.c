@@ -23,15 +23,15 @@ if (index > j)
 {
 return (-1);
 }
-/*j--;*/
+j--;
 j = j - index;
 while (n != 0)
 {
+r = n % 2;
 if (j == 0)
 {
 return (r);
 }
-r = n % 2;
 n = n / 2;
 j--;
 }
