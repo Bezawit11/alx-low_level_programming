@@ -25,8 +25,6 @@ for (i = 0; i < index ; i++)
 p = p * 2;
 }
 sum = sum + (1 * p);
-*n = sum;
-return (1);
 }
 while (k != 0)
 {
@@ -38,7 +36,7 @@ if (index > 63)
 {
 return (-1);
 }
-if (index > j && index < 63)
+if (index > j && index <= 63)
 {
 for (i = 0; i < index ; i++)
 {
