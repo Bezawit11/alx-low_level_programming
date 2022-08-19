@@ -8,15 +8,12 @@
  *Return: 1 if it worked, or -1 if an error occurred
  */
 int set_bit(unsigned long int *n, unsigned int index)
-  
 {
-unsigned long int r, *h, k, m, j = 0;
+unsigned long int r, k, m, j = 0, p = 1, sum = 0;
 unsigned int i, l = 0;
-unsigned long int p = 1, sum = 0;
 if (n == NULL)
 return (-1);
-h = n;
-k = *h;
+k = *n;
 m = k;
 if (k == 0)
 {
@@ -33,9 +30,7 @@ k = k / 2;
 }
 j--;
 if (index > 63)
-{
 return (-1);
-}
 if (index > j && index <= 63)
 {
 for (i = 0; i < index ; i++)
