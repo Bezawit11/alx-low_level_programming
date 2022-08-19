@@ -33,9 +33,17 @@ j = j + 1;
 k = k / 2;
 }
 j--;
-if (index > j)
+if (index > 63)
 {
 return (-1);
+}
+if (index > j && index < 63)
+{
+for (i = 0; i < index ; i++)
+{
+p = p * 2;
+}
+sum = sum + (r *p)
 }
 while (m != 0)
 {
@@ -48,7 +56,7 @@ for (i = 0; i < l ; i++)
 {
 p = p * 2;
 }
-sum = sum + (r * p);
+sum = sum + (r *p);
 m = m / 2;
 index--;
 j--;
