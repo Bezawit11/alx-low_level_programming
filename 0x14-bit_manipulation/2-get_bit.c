@@ -33,7 +33,7 @@ if (j == 0)
 return (r);
 }
 n = n / 2;
---j;
+j--;
 }
-return (r);
+return;
 }
