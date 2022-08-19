@@ -30,10 +30,10 @@ while (n != 0)
 r = n % 2;
 if (j == 0)
 {
-return (r);
+break;
 }
 n = n / 2;
 j--;
 }
-return;
+return (r);
 }
