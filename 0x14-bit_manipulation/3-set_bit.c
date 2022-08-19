@@ -19,7 +19,7 @@ k = *h;
 m = k;
 if (k == 0)
 {
-for (i = 0; i <= index ; i++)
+for (i = 0; i < index ; i++)
 {
 p = p * 2;
 }
