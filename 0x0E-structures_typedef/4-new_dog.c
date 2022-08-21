@@ -35,7 +35,7 @@ return (NULL);
 for (i = 0, i <= a; i++)
       p->name[i] = name[i];
 p->owner = malloc(j * sizeof(p->owner));
-if (doge->owner == NULL)
+if (p->owner == NULL)
 {
 free(p->owner);
 free(p->name);
