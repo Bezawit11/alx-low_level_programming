@@ -33,7 +33,9 @@ free(p);
 return (NULL);
 }
 for (i = 0; i <= a; i++)
-    p->name[i] = name[i];
+{
+p->name[i] = name[i];
+}
 p->owner = malloc(b * sizeof(owner));
 if (p->owner == NULL)
 {
