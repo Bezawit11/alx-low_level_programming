@@ -21,9 +21,13 @@ free(p);
 return (NULL);
 }
 while (name[a] != '\0')
-       a++;
+{
+a++;
+}
 while (owner[b] != '\0')
-       b++;
+{
+b++;
+}
 p->age = age;
 p->name = malloc(a * sizeof(p->name));
 if (p->name == NULL)
@@ -33,7 +37,9 @@ free(p);
 return (NULL);
 }
 for (i = 0, i <= a; i++)
-      p->name[i] = name[i];
+{
+p->name[i] = name[i];
+}
 p->owner = malloc(b * sizeof(p->owner));
 if (p->owner == NULL)
 {
@@ -43,6 +49,8 @@ free(p);
 return (NULL);
 }
 for (i = 0; i <= b; i++)
-		p->owner[i] = owner[i];
+{
+p->owner[i] = owner[i];
+}
 return (p);
 }
