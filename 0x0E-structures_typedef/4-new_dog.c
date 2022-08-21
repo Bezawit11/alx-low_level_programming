@@ -25,7 +25,7 @@ a++;
 while (owner[b] != '\0')
 b++;
 p->age = age;
-p->name = malloc(a * sizeof(name));
+p->name = malloc(a *sizeof(name));
 if (p->name == NULL)
 {
 free(p->name);
@@ -36,7 +36,7 @@ for (i = 0; i <= a; i++)
 {
 p->name[i] = name[i];
 }
-p->owner = malloc(b * sizeof(owner));
+p->owner = malloc(b *sizeof(owner));
 if (p->owner == NULL)
 {
 free(p->owner);
