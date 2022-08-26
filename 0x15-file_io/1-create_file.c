@@ -2,6 +2,7 @@
 
 /**
  *create_file - creates a new file
+ *@filename: the name of the file
  *@text_content: text to be written
  *Return: returns 1 on success, -1 if fail
  */
