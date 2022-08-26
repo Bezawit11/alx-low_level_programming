@@ -24,12 +24,20 @@ return (0);
 let = malloc(sizeof(char) * letters);
 if (let == NULL)
 return (0);
-a = read
-if (i < 0)
+a = read(fd, let, letters);
+if (a < 0)
 {
-		free(buf);
-		return (0);
-}
+free(let);
 return (0);
-
+}
+let[i] = '\0';
+close(fd);
+b = write(STDOUT_FILENO, let, a);
+if (b < 0)
+{
+free(let);
+return (0);
+}
+free(let);
+return (b);
 }
