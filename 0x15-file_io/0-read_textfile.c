@@ -27,7 +27,7 @@ if (a < 0)
 free(let);
 return (0);
 }
-let[i] = '\0';
+let[a] = '\0';
 close(fd);
 b = write(STDOUT_FILENO, let, a);
 if (b < 0)
