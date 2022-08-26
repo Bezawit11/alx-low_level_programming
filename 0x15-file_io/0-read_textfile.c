@@ -2,6 +2,7 @@
 
 /**
  *read_textfile - reads a text file
+ *@filename: the name of the text file
  *@letters: number of letters it should read and print
  *Return: the actual number of letters it could read and print
  */
@@ -14,9 +15,7 @@ if (filename == NULL)
 return (0);
 fd = open(filename, O_RDONLY);
 if (fd < 0)
-{
 return (0);
-}
 let = malloc(sizeof(char) * letters);
 if (let == NULL)
 return (0);
