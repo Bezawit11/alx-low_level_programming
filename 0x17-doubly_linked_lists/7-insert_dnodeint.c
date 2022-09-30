@@ -20,6 +20,13 @@ new = malloc(sizeof(dlistint_t));
 if (new == NULL)
 return (NULL);
 new->n = n;
+if (idx == 0)
+{
+new->prev = NULL;
+new->next = *h;
+*h = new;
+return (*h);
+}
 for (i = 1; i < idx; i++)
 {
 c = c->next;
