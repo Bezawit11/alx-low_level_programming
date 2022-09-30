@@ -22,7 +22,7 @@ new->n = n;
 new->prev = NULL;
 new->next = *head;
 *head = new;
-return (*head);   
+return (*head);
 }
 new->n = n;
 while (c->next != NULL)
