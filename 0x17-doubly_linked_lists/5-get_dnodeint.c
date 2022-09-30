@@ -2,7 +2,7 @@
 #include "lists.h"
 
 /**
- *get_dnodeint_at_index - a function that returns the nth node of a dlinked list
+ *get_dnodeint_at_index - returns the nth node of a dlinked list
  *@head: doubly linked list
  *@index: the index of the node, starting from 0
  *Return: returns the nth node
