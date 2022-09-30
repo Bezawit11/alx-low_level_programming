@@ -26,7 +26,6 @@ while (g != NULL)
 l++;
 g = g->next;
 }
-l = l - 1;
 if (idx > l)
 return (NULL);
 if (idx == 0)
