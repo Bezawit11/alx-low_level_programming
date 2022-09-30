@@ -21,7 +21,7 @@ while (g != NULL)
 l++;
 g = g->next;
 }
-if (index > l)
+if (index >= l)
 return -1;
 if (index == 0)
 {
