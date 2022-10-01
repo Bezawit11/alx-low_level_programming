@@ -38,7 +38,7 @@ c = c->next;
 c->next = new;
 new->prev = c;
 new->next = NULL;
-return (*h);   
+return (new);   
 }
 if (idx == 0)
 {
