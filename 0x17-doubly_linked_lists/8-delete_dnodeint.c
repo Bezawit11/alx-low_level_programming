@@ -22,6 +22,16 @@ while (g != NULL)
 l++;
 g = g->next;
 }
+if (index == l && l != 0)
+{
+while (c->next != NULL)
+{
+c = c->next;
+}
+c->next = NULL;
+c->prev = NULL;
+return (1);
+}
 if (index >= l)
 return (-1);
 if (index == 0)
