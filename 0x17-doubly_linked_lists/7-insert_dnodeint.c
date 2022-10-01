@@ -32,6 +32,10 @@ if (idx == 0)
 {
 new->prev = NULL;
 new->next = *h;
+if ((*h) != NULL)
+{
+(*h)->prev = new;
+}
 *h = new;
 return (*h);
 }
