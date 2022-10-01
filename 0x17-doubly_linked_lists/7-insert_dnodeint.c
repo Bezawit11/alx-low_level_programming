@@ -42,5 +42,5 @@ c = c->next;
 new->prev = c;
 new->next = c->next;
 c->next = new;
-return (c);
+return (new);
 }
