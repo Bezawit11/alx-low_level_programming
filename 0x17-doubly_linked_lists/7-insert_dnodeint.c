@@ -30,7 +30,9 @@ return (NULL);
 if (idx == l && l != 0)
 {
 while (c->next != NULL)
-    c = c->next;
+{
+c = c->next;
+}
 c->next = new;
 new->prev = c;
 new->next = NULL;
@@ -48,7 +50,9 @@ if ((*h) != NULL)
 return (*h);
 }
 for (i = 1; i < idx; i++)
-    c = c->next;
+{
+c = c->next;
+}
 new->prev = c;
 new->next = c->next;
 c->next->prev = new;
