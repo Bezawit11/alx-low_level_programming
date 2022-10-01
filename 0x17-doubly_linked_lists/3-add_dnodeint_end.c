@@ -19,8 +19,8 @@ return (NULL);
 if (c == NULL)
 {
 new->n = n;
-new->prev = NULL;
-new->next = *head;
+new->next = NULL;
+new->prev = *head;
 *head = new;
 return (*head);
 }
