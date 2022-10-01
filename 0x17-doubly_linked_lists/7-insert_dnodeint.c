@@ -28,6 +28,18 @@ g = g->next;
 }
 if (idx > l)
 return (NULL);
+if (idx == l)
+{
+new->n = n;
+while (c->next != NULL)
+{
+c = c->next;
+}
+c->next = new;
+new->prev = c;
+new->next = NULL;
+return (*h);   
+}
 if (idx == 0)
 {
 new->prev = NULL;
