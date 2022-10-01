@@ -27,6 +27,7 @@ return (-1);
 if (index == 0)
 {
 c = c->next;
+c->prev = NULL;
 *head = c;
 return (1);
 }
