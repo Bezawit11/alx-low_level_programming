@@ -40,8 +40,8 @@ for (i = 1; i < idx; i++)
 c = c->next;
 }
 new->prev = c;
-c->next->prev = new;
 new->next = c->next;
+c->next->prev = new;
 c->next = new;
 return (c);
 }
