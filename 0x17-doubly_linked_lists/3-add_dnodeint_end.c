@@ -30,6 +30,7 @@ while (c->next != NULL)
 c = c->next;
 }
 c->next = new;
+new->prev = c;
 new->next = NULL;
 return (*head);
 }
