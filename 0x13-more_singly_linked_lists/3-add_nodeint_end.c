@@ -29,5 +29,7 @@ while (temp->next != NULL)
 temp = temp->next;
 }
 temp->next = new;
-return (new);
+*head = new;
+free(new);
+return (*head);
 }
