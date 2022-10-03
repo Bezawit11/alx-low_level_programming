@@ -39,5 +39,8 @@ c = c->next;
 }
 p->next = c->next;
 c->next = NULL;
+free(c);
+free(p);
+free(g);
 return (1);
 }
