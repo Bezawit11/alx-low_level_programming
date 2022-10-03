@@ -1,5 +1,5 @@
 section .data
-    msg db "Hello, Holberton",10;
+    msg db "Hello, Holberton",10      ; 10 is the ASCII code for a new line (LF)
 
 section .text
     global _start
@@ -14,13 +14,3 @@ _start:
     mov rax, 60
     mov rdi, 0
     syscall
-
-#include <unistd.h>
-
-#define STDOUT 1
-
-int main()
-{
-    write(STDOUT, "Hello, Holberton\n", 17);
-    _exit(0);
-}
