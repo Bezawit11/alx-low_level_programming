@@ -16,7 +16,7 @@ c = *head;
 p = (*head)->next;
 *head = (*head)->next;
 c->next = NULL;
-while(*head != NULL)
+while (*head != NULL)
 {
 *head = (*head)->next;
 p->next = c;
