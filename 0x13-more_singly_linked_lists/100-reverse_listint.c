@@ -9,25 +9,20 @@
 listint_t *reverse_listint(listint_t **head)
 
 {
-listint_t *c = NULL, *prev = *head;
-while (prev != NULL)
+listint_t *p, *c;
+if (*head == NULL)
+return (NULL);
+c = *head;
+p = (*head)->next;
+*head = (*head)->next;
+c->next = NULL;
+while(*head != NULL)
 {
-add_nodeint(&c, prev->n);
-prev = prev->next;
+*head = (*head)->next;
+p->next = c;
+c = p;
+p = (*head);
 }
 *head = c;
-return (*head);
-}
-
-listint_t *add_nodeb(listint_t **head, const int n)
-
-{
-listint_t *new;
-new = malloc(sizeof(listint_t));
-if (new == NULL)
-return (NULL);
-new->next = *head;
-new->n = n;
-*head = new;
 return (*head);
 }
