@@ -9,11 +9,19 @@
 listint_t *reverse_listint(listint_t **head)
 
 {
-listint_t *c = NULL, *prev = *head;
-while (prev != NULL)
+listint_t *p, *c;
+if (*head == NULL)
+return (NULL);
+c = *head;
+p = (*head)->next;
+*head = (*head)->next;
+c->next = NULL;
+while(*head != NULL)
 {
-add_nodeint(&c, prev->n);
-prev = prev->next;
+*head = (*head)->next;
+p->next = c;
+c = p;
+p = (*head);
 }
 *head = c;
 return (*head);
