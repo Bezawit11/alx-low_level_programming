@@ -22,8 +22,8 @@ exit(EXIT_FAILURE);
 }
 else{
 if (fgets(str, 10, ourfile) != NULL)
-parse(str, opcode);
-
+opcode = parse(str, opcode);
+instruction(parse[0]);
 }
 return 0;
 }
