@@ -6,7 +6,7 @@
  *
  *
  */
-stack_t (*instruction(char *str))(stack_t, unsigned int)
+void (*instruction(char *str))(stack_t, unsigned int)
 
 {
 char **opcode;
