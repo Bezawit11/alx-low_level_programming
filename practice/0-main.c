@@ -10,6 +10,7 @@ int main(int argc, char **argv)
 {
 FILE *ourfile;
 char str[10], **opcode;
+stack_t stack;
 if (argc != 2)
 {
 printf("USAGE: monty file\n");
@@ -21,9 +22,11 @@ printf("Error: Can't open file %s\n", argv[1]);
 exit(EXIT_FAILURE);
 }
 else{
-if (fgets(str, 10, ourfile) != NULL)
+while (fgets(str, 10, ourfile)){
 opcode = parse(str, opcode);
-instruction(parse[0]);
+i++;
+instruction(opcode[0])(stack, i);
+}
 }
 return 0;
 }
