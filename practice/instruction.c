@@ -22,7 +22,7 @@ instruction_t ins[] = {
 int i = 0;
 while (i < 8)
 {
-if (*(ins[i].opcode) == str || i == 7)
+if (strcmp(ins[i].opcode, str) == 0) || i == 7)
 break;
 i++;
 }
