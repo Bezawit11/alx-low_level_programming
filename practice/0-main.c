@@ -13,7 +13,6 @@ int main(int argc, char **argv)
 int i = 0;
 FILE *ourfile;
 char str[10];
-stack_t stack;
 if (argc != 2)
 {
 printf("USAGE: monty file\n");
