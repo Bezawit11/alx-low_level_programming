@@ -6,10 +6,11 @@
  *
  *
  */
-void (*instruction(char *str))(stack_t, unsigned int)
+void (*instruction(char *str, int n))(stack_t, unsigned int)
 
 {
 char **op;
+stack **h;
 instruction_t ins[] = {
 {"push", op_push},
 /*{"pall", op_pall},
@@ -28,5 +29,5 @@ if ((strcmp(ins[i].opcode, op[0]) == 0) || (i == 7))
 break;
 i++;
 }
-return (ins[i].f);
+ins[i].f(h, n);
 }
