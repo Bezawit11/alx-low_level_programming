@@ -10,7 +10,7 @@
 int main(int argc, char **argv)
 
 {
-int i = 0, n;
+int i = 0, n, r;
 stack_t *c = malloc(sizeof(stack_t));
 char **opcode;
 FILE *ourfile;
@@ -28,6 +28,12 @@ exit(EXIT_FAILURE);
 else{
 while (fgets(str, 12, ourfile)){
 opcode = parse(str, opcode);
+r = checker(opcode[1]);
+if (r == 0)
+{
+printf("L<line_number>: usage: push integer");
+exit(EXIT_FAILURE);
+}
 i++;
 instruction(opcode[0], n, &c);
 }
