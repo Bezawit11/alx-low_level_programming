@@ -10,7 +10,9 @@
 int main(int argc, char **argv)
 
 {
-int i = 0;
+int i = 0, n;
+stack_t *c = malloc(sizeof(stack_t));
+char **opcode;
 FILE *ourfile;
 char str[10];
 if (argc != 2)
@@ -25,10 +27,11 @@ exit(EXIT_FAILURE);
 }
 else{
 while (fgets(str, 12, ourfile)){
-//opcode = parse(str, opcode);
+opcode = parse(str, opcode);
 i++;
-instruction(str, i);
+instruction(opcode[0], n, &c);
 }
 }
-return 0;
+free_struct(c);
+return 1;
 }
