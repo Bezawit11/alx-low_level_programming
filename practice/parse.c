@@ -13,7 +13,7 @@ char *tok = malloc(50);
 opcode = malloc(size * sizeof(char *));
 if (opcode == NULL)
 return NULL;
-tok = strtok(n, " ");
+tok = strtok(str, " ");
 while (tok != NULL)
 {
 opcode[i] = tok;
