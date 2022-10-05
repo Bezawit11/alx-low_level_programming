@@ -9,9 +9,9 @@ int checker(char *str)
 
 {
 int a, i;
-for (i = 0; c[i] != '\0'; c++)
+for (i = 0; str[i] != '\0'; str++)
 {
-a = isdigit(*c);
+a = isdigit(*str);
 if (a == 0)
 {
 return 0;
