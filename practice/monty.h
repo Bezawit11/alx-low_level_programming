@@ -40,3 +40,4 @@ void op_swap(stack_t **stack, unsigned int line_number);
 void op_add(stack_t **stack, unsigned int line_number);
 void op_nop(stack_t **stack, unsigned int line_number);
 void (*instruction(char *str, int n))(stack_t, unsigned int);
+int checker(char *str);
