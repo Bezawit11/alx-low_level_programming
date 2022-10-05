@@ -29,7 +29,7 @@ i++;
 }
 if (i == 0)
 {
-c->n = n;
+(*c)->n = n;
 ins[i].f(c, n);
 }
 if (ins[i].f != NULL)
