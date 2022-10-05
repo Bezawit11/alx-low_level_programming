@@ -10,7 +10,7 @@ char **parse(char *str, char **opcode)
 {
 int i;
 char *tok = malloc(50);
-opcode = malloc(size * sizeof(char *));
+opcode = malloc(50 * sizeof(char *));
 if (opcode == NULL)
 return NULL;
 tok = strtok(str, " ");

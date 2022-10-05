@@ -23,7 +23,8 @@ exit(EXIT_FAILURE);
 else{
 if (fgets(str, 10, ourfile) != NULL)
 opcode = parse(str, opcode);
-instruction(parse[0]);
+instruction(opcode[0]);
 }
+free(opcode);
 return 0;
 }
