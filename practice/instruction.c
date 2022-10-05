@@ -31,4 +31,7 @@ if (ins[i].f != NULL)
 {
 ins[i].f(c, n);
 }
+else if (ins[i].f == NULL){
+fprintf(stderr, "%lu: unknown instruction %s", line_number, str);
+exit(EXIT_FAILURE);}
 }
