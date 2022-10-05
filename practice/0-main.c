@@ -25,10 +25,10 @@ printf("Error: Can't open file %s\n", argv[1]);
 exit(EXIT_FAILURE);
 }
 else{
-while (fgets(str, 10, ourfile)){
+while (fgets(str, 12, ourfile)){
 //opcode = parse(str, opcode);
 i++;
-instruction(str)(stack, i);
+instruction(str, i);
 }
 }
 return 0;
