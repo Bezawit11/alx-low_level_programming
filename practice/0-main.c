@@ -36,7 +36,6 @@ exit(EXIT_FAILURE);
 }
 i++;
 n = atoi(opcode[1]);
-c->n = n;
 instruction(opcode[0], n, &c);
 }
 }
