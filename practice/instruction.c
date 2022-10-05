@@ -27,6 +27,11 @@ if ((strcmp(ins[i].opcode, str) == 0) || (i == 7))
 break;
 i++;
 }
+if (i == 0)
+{
+c->n = n;
+ins[i].f(c, n);
+}
 if (ins[i].f != NULL)
 {
 ins[i].f(c, n);
