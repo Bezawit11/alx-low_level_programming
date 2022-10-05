@@ -6,11 +6,10 @@
  *
  *
  */
-void (*instruction(char *str, int n))(stack_t, unsigned int)
+void (*instruction(char *str, int n, stack_t **c))(stack_t, unsigned int)
 
 {
 char **op;
-stack **h;
 instruction_t ins[] = {
 {"push", op_push},
 /*{"pall", op_pall},
@@ -22,12 +21,11 @@ instruction_t ins[] = {
 {NULL, NULL}
 };
 int i = 0;
-op = parse(str, op);
 while (i < 8)
 {
-if ((strcmp(ins[i].opcode, op[0]) == 0) || (i == 7))
+if ((strcmp(ins[i].opcode, str) == 0) || (i == 7))
 break;
 i++;
 }
-ins[i].f(h, n);
+ins[i].f(&c, n);
 }
