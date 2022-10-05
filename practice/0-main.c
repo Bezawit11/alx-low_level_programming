@@ -35,9 +35,11 @@ printf("L<line_number>: usage: push integer");
 exit(EXIT_FAILURE);
 }
 i++;
+n = atoi(opcode[1]);
+c->n = n;
 instruction(opcode[0], n, &c);
 }
 }
-free_struct(c);
+/*free_struct(c);*/
 return 1;
 }
