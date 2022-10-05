@@ -22,11 +22,7 @@ instruction_t ins[] = {
 int i = 0;
 while (i < 8)
 {
-<<<<<<< HEAD
 if ((strcmp(ins[i].opcode, op) == 0) || (i == 7))
-=======
-if (strcmp(ins[i].opcode, op) == 0) || i == 7)
->>>>>>> 5f759f47b437dc4b396b398540a5c49240f1fd36
 break;
 i++;
 }

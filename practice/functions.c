@@ -9,6 +9,7 @@ stack_t op_push(stack_t **stack, unsigned int line_number)
 
 {
 printf("yayyy");
+return;
 }
 
 /**
@@ -22,7 +23,7 @@ printf("yayyy");
 
 }
 
-/**
+**
  *
  *
  *
@@ -33,7 +34,7 @@ printf("yayyy");
 
 }
 
-/**
+**
  *
  *
  */
@@ -43,7 +44,7 @@ printf("yayyy");
 
 }
 
-/**
+**
  *
  *
  */

@@ -10,6 +10,7 @@
 int main(int argc, char **argv)
 
 {
+int i = 0;
 FILE *ourfile;
 char str[10], **opcode;
 stack_t stack;
