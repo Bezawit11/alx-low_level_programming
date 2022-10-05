@@ -12,7 +12,7 @@ int main(int argc, char **argv)
 {
 int i = 0;
 FILE *ourfile;
-char str[10], **opcode;
+char str[10];
 stack_t stack;
 if (argc != 2)
 {
@@ -26,9 +26,9 @@ exit(EXIT_FAILURE);
 }
 else{
 while (fgets(str, 10, ourfile)){
-opcode = parse(str, opcode);
+//opcode = parse(str, opcode);
 i++;
-instruction(opcode[0])(stack, i);
+instruction(str)(stack, i);
 }
 }
 return 0;
