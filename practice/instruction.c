@@ -6,7 +6,7 @@
  *
  *
  */
-void (*instruction(char *str, int n, stack_t **c))(stack_t, unsigned int)
+void instruction(char *str, int n, stack_t **c)
 
 {
 /*char **op;*/
@@ -21,9 +21,9 @@ instruction_t ins[] = {
 {NULL, NULL}
 };
 int i = 0;
-while (i < 8)
+while (i < 2)
 {
-if ((strcmp(ins[i].opcode, str) == 0) || (i == 7))
+if ((strcmp(ins[i].opcode, str) == 0) || (i == 1))
 break;
 i++;
 }
@@ -32,11 +32,11 @@ if (i == 0)
 (*c)->n = n;
 ins[i].f(c, n);
 }
-if (ins[i].f != NULL)
+else if (ins[i].f != NULL)
 {
 ins[i].f(c, n);
 }
 else if (ins[i].f == NULL){
-fprintf(stderr, "%lu: unknown instruction %s", 1, str);
+fprintf(stderr, "%d: unknown instruction %s", 1, str);
 exit(EXIT_FAILURE);}
 }
