@@ -6,10 +6,10 @@
  *
  *
  */
-void instruction(char *str, int n, stack_t **c)
+void instruction(char **cmd, int n)
 
 {
-char **op = NULL;
+stack_t *c = NULL;
 instruction_t ins[] = {
 {"push", op_push},
 /*{"pall", op_pall},
@@ -22,24 +22,23 @@ instruction_t ins[] = {
 };
 int i = 0;
 printf("could it be parse");
-op = parse(str, op);
-printf("%s\n", op[0]);
+/*printf("%s\n", op[0]);*/
 while (i < 2)
 {
-if ((strcmp(ins[i].opcode, op[0]) == 0) || (i == 1))
+if ((strcmp(ins[i].opcode, cmd[0]) == 0) || (i == 1))
 break;
 i++;
 }
 if (i == 0)
 {
-(*c)->n = n;
-ins[i].f(c, n);
+/*(*c)->n = n;*/
+ins[i].f(&c, n);
 }
 else if (ins[i].f != NULL)
 {
-ins[i].f(c, n);
+ins[i].f(&c, n);
 }
 else if (ins[i].f == NULL){
-fprintf(stderr, "%d: unknown instruction %s", 1, str);
+fprintf(stderr, "%d: unknown instruction %s", 1, cmd[0]);
 exit(EXIT_FAILURE);}
 }

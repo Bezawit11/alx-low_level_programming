@@ -1,3 +1,4 @@
+#define _GNU_SOURCE
 #include <stdio.h>
 #include <stdlib.h>
 #include "monty.h"
@@ -10,40 +11,36 @@
 int main(int argc, char **argv)
 
 {
-int n = 0, h;
-stack_t *c = malloc(sizeof(stack_t));
-/*char **opcode;*/
-FILE *ourfile;
-char s[10];
-char *str = malloc(50 *sizeof(char *));
-/*size_t t;*/
+int count = 0, r, l;
+size_t t = 0;
+FILE *stream;
+char *s = NULL, **tokenz;
 if (argc != 2)
 {
 printf("USAGE: monty file\n");
 exit(EXIT_FAILURE);
 }
-ourfile = fopen(argv[1], "r");
-if (ourfile == NULL){
+stream = fopen(argv[1], "r");
+if (stream == NULL){
 printf("Error: Can't open file %s\n", argv[1]);
 exit(EXIT_FAILURE);
 }
 else{
-fgets(s, 10, ourfile);
-while (str != NULL){
-strcpy(str, s);
-h = strlen(str);
-if (str[h - 1] == '\n')
+while ((r = getline(&s, &t, stream)) != -1){
+count++;
+l = strlen(s);
+l = l - 1;
+if (s[l] == '\n')
 {
-str[h - 1] = '\0';
+*(s + l) = '\0';
 }
-printf("yayyyyy %s", str);
-printf("woohoo\n");
-instruction(str, n, &c);
-/*fgets(s, 10, ourfile);*/
-break;
+printf("upto strlen");
+tokenz = parse(s, tokenz);
+instruction(tokenz, count);
 }
 }
-fclose(ourfile);
+printf("%d", count);
+fclose(stream);
 /*free_struct(c);*/
 return 1;
 }
