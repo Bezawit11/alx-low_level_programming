@@ -1,13 +1,7 @@
-#ifndef MONTY_H
-#define MONTY_H
-
 #include <stdlib.h>
 #include <stdio.h>
 #include <string.h>
 #include <ctype.h>
-#include <sys/types.h>
-#include <sys/stat.h>
-#include <fcntl.h>
 /**
  *struct stack_s - doubly linked list representation of a stack (or queue)
  *@n: integer
@@ -47,5 +41,3 @@ void op_add(stack_t **stack, unsigned int line_number);
 void op_nop(stack_t **stack, unsigned int line_number);
 void instruction(char *str, int n, stack_t **c);
 int checker(char *str);
-
-#endif

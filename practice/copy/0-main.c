@@ -1,6 +1,6 @@
 #include <stdio.h>
-#include <stdlib.h>
 #include "monty.h"
+#include <stdlib.h>
 
 /**
  *
@@ -10,12 +10,11 @@
 int main(int argc, char **argv)
 
 {
-int n = 0;/* r;*/
+int i = 0, n = 0;/* r;*/
 stack_t *c = malloc(sizeof(stack_t));
 /*char **opcode;*/
 FILE *ourfile;
-char str[10];
-/*size_t t;*/
+char str[10] = {0};
 if (argc != 2)
 {
 printf("USAGE: monty file\n");
@@ -27,14 +26,20 @@ printf("Error: Can't open file %s\n", argv[1]);
 exit(EXIT_FAILURE);
 }
 else{
-fgets(str, 10, ourfile);
-while (str != NULL){
-printf("yayyyyy %s\n", str);
+while (fgets(str, 10, ourfile)){
+printf("yayyyyy\n");
+/*r = checker(opcode[1]);
+if (r == 0)
+{
+printf("L<line_number>: usage: push integer");
+exit(EXIT_FAILURE);
+}*/
+i++;
+/*n = atoi(opcode[1]);*/
+printf("while loop");
 instruction(str, n, &c);
-fgets(str, 10, ourfile);
 }
 }
-fclose(ourfile);
 /*free_struct(c);*/
 return 1;
 }
