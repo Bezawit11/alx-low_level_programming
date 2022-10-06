@@ -10,9 +10,9 @@
 int main(int argc, char **argv)
 
 {
-int i = 0, n, r;
+int i = 0, n;/* r;*/
 stack_t *c = malloc(sizeof(stack_t));
-char **opcode;
+/*char **opcode;*/
 FILE *ourfile;
 char str[10];
 if (argc != 2)
@@ -26,17 +26,19 @@ printf("Error: Can't open file %s\n", argv[1]);
 exit(EXIT_FAILURE);
 }
 else{
-while (fgets(str, 12, ourfile)){
-opcode = parse(str, opcode);
+while (fgets(str, 10, ourfile)){
+printf("yayyyyy\n");
+/*opcode = parse(str, opcode);
 r = checker(opcode[1]);
 if (r == 0)
 {
 printf("L<line_number>: usage: push integer");
 exit(EXIT_FAILURE);
-}
+}*/
 i++;
-n = atoi(opcode[1]);
-instruction(opcode[0], n, &c);
+/*n = atoi(opcode[1]);*/
+n = 4;
+instruction(str, n, &c);
 }
 }
 /*free_struct(c);*/
