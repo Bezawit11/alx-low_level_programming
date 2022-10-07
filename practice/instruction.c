@@ -5,10 +5,10 @@
  *
  *
  */
-void instruction(char **cmd)
+void instruction(char *cmd)
 
 {
-stack_t *c = NULL;
+stack_t **c = NULL;
 instruction_t ins[] = {
 {"push", op_push},
 /*{"pall", op_pall},
@@ -22,12 +22,12 @@ instruction_t ins[] = {
 int i = 0;
 while (i < 7)
 {
-if ((strcmp(ins[i].opcode, cmd[0]) == 0)){
+if ((strcmp(ins[i].opcode, cmd) == 0)){
 break;}
 i++;
 }
 if (i == 7){
-fprintf(stderr, "Error: %s command not found\n", cmd[0]);
+fprintf(stderr, "Error: %s command not found\n", cmd);
 }
-ins[i].f(&c, 1);
+ins[i].f(c, 1);
 }

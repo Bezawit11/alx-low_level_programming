@@ -5,22 +5,15 @@
  *@str: line from a file
  *Return: returns a tokenized line
  */
-char **parse(char *str, char **opcode)
+char *parse(char *str, unsigned int line_number)
 
 {
-int i;
-char *tok = malloc(50);
-opcode = malloc(50 * sizeof(char *));
-if (opcode == NULL)
+char *tok;
+printf("L%d: usage: push integer\n", line_number);
+tok = strtok(str, "\n");
+if (tok == NULL)
 return NULL;
 tok = strtok(str, " ");
-while (tok != NULL)
-{
-opcode[i] = tok;
-tok = strtok(NULL, " ");
-i = i + 1;
-}
-opcode[i] = NULL;
 /*free(tok);*/
-return (opcode);
+return (tok);
 }

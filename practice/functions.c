@@ -8,22 +8,37 @@
 void op_push(stack_t **stack, unsigned int line_number)
 
 {
-stack_t *new;
-new = malloc(sizeof(stack_t));
-printf("woohoo\n");
-if(*stack == NULL)
-{
-printf("Stack overflow");
-}
-new->n = line_number;
-new->prev = NULL;
-new->next = *stack;/*
-if ((*stack) != NULL)
-{
-(*stack)->prev = new;
-}
-*stack = new;
-free(new);*/
+int data = 3;
+stack_t *top;
+
+	(void)line_number;
+
+
+
+		top = malloc(sizeof(stack_t));
+
+			if (top == NULL)
+
+					{
+
+								fprintf(stderr, "Error: malloc failed\n");
+
+										exit(EXIT_FAILURE);
+
+											}
+
+
+
+				top->n = data;
+
+					top->next = *stack;
+
+						top->prev = NULL;
+
+							if (*stack != NULL)
+
+			(*stack)->prev = top;
+*stack = top;
 }
 
 /**
