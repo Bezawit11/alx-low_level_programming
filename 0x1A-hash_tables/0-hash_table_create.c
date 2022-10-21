@@ -16,7 +16,7 @@ if (p == NULL)
 return (NULL);
 }
 p->size = size;
-p->array= malloc(sizeof(hash_node_t *) * size);
+p->array = malloc(sizeof(hash_node_t *) * size);
 if (p->array == NULL)
 {
 free(p);
@@ -27,5 +27,5 @@ while (a < size)
 p->array[a] = NULL;
 a = a + 1;
 }
-return p;
+return (p);
 }
