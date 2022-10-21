@@ -24,7 +24,7 @@ return (NULL);
 }
 while (a < size)
 {
-p->array[i] = NULL;
+p->array[a] = NULL;
 a = a + 1;
 }
 return p;
