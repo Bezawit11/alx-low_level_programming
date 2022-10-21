@@ -17,12 +17,12 @@ return (NULL);
 }
 p->size = size;
 p->array= malloc(sizeof(hash_node_t *) * size);
-if (hash_table->array == NULL)
+if (p->array == NULL)
 {
 free(p);
 return (NULL);
 }
-while (i < size)
+while (a < size)
 {
 p->array[i] = NULL;
 a = a + 1;
