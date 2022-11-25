@@ -1,4 +1,5 @@
 import uuid
+import storage
 from datetime import datetime
 class BaseModel:
     def __init__(self, *args, **kwargs):
@@ -19,6 +20,7 @@ class BaseModel:
         return f"[{self.__class__.__name__}] ({self.id}) <{self.__dict__}>"
     def save(self):
         self.updated_at = datetime.now()
+        storage.save()
     def to_dict(self):
         self.__dict__['__class__'] = __class__.__name__
         self.__dict__['created_at'] = self.created_at.isoformat()
