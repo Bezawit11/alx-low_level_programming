@@ -10,20 +10,21 @@ class FileStorage:
 
     def new(self, obj):
         """sets in __objects the obj with key <obj class name>.id"""
-        self.__objects['obj.__class__.__name__.id'] = obj
+        FileStorage.__objects["{}.{}".format(obj.__class__.__name__, obj.id)] = obj.__dict__
 
     def save(self):
         print("saving")
-        with open(self.__file_path, mode='w', encoding="utf-8") as f:
-            json.dump(self.__objects, f)
+        out_file = open(self.__file_path, "w")
+        json.dump(self.__objects, out_file, indent=6)
+        out_file.close()
+        #with open(self.__file_path, mode='w', encoding="utf-8") as f:
+         #   json.dump(self.__objects, f)
 
     def reload(self):
         try:
             with open(FileStorage.__file_path) as f:
-                objdict = json.load(f)
-                for o in objdict.values():
-                    cls_name = o["__class__"]
-                    del o["__class__"]
-                    self.new(eval(cls_name)(**o))
-        except FileNotFoundError:
+                read = json.load(f)
+                for keys, values in read.items():
+                    elf.__objects[keys] = values
+        except (json.decoder.JSONDecodeError, FileNotFoundError):
             return
