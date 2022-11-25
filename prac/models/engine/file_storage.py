@@ -1,4 +1,5 @@
 from os.path import exists
+from models.base_model import BaseModel
 import json
 class FileStorage:
     __file_path = "/alx-low_level_programming/prac/file.json"
@@ -10,7 +11,11 @@ class FileStorage:
 
     def new(self, obj):
         """sets in __objects the obj with key <obj class name>.id"""
-        FileStorage.__objects["{}.{}".format(obj.__class__.__name__, obj.id)] = obj.__dict__
+        #FileStorage.__objects["{}.{}".format(obj.__class__.__name__, obj.id)] = obj.__dict__
+        dict1 = obj.__dict__.copy()
+        #obj.__dict__["__class__"] = obj.__class__.__name__
+        dict1["__class__"] = obj.__class__.__name__
+        FileStorage.__objects["{}.{}".format(obj.__class__.__name__, obj.id)] = dict1
 
     def save(self):
         print("saving")
@@ -25,6 +30,11 @@ class FileStorage:
             with open(FileStorage.__file_path) as f:
                 read = json.load(f)
                 for keys, values in read.items():
+                    for k, v in values.items():
+                        if k == "__class__":
+                            values.pop("__class__")
+                            break
+                        break
                     self.__objects[keys] = values
         except (json.decoder.JSONDecodeError, FileNotFoundError):
             return
