@@ -1,6 +1,7 @@
 from os.path import exists
+import json
 class FileStorage:
-    __file_path = "C:/Users/HP/PycharmProjects/pythonProject1/file.json"
+    __file_path = "/alx-low_level_programming/prac/file.json"
     __objects = {}  # dictionary - empty but will store all objects by <class name>.id
 
     def all(self):
