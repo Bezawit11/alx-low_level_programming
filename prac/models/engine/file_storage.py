@@ -25,6 +25,6 @@ class FileStorage:
             with open(FileStorage.__file_path) as f:
                 read = json.load(f)
                 for keys, values in read.items():
-                    elf.__objects[keys] = values
+                    self.__objects[keys] = values
         except (json.decoder.JSONDecodeError, FileNotFoundError):
             return
