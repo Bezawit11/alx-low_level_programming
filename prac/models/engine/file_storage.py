@@ -12,10 +12,10 @@ class FileStorage:
     def new(self, obj):
         """sets in __objects the obj with key <obj class name>.id"""
         #FileStorage.__objects["{}.{}".format(obj.__class__.__name__, obj.id)] = obj.__dict__
-        dict1 = obj.__dict__.copy()
+        #dict1 = obj.__dict__.copy()
         #obj.__dict__["__class__"] = obj.__class__.__name__
-        dict1["__class__"] = obj.__class__.__name__
-        FileStorage.__objects["{}.{}".format(obj.__class__.__name__, obj.id)] = dict1
+        #dict1["__class__"] = obj.__class__.__name__
+        FileStorage.__objects["{}.{}".format(obj.__class__.__name__, obj.id)] = obj.to_dict()
 
     def save(self):
         print("saving")
