@@ -8,13 +8,14 @@ class BaseModel:
                 if key == 'id':
                     self.id = value
                 elif key == 'created_at':
-                    self.created_at = datetime.now()
+                    self.created_at = str(datetime.now())
                 elif key == 'updated_at':
-                    self.updated_at = datetime.now()
+                    self.updated_at = str(datetime.now())
         else:     
             self.id = str(uuid.uuid4())
             self.created_at = str(datetime.now())
             self.updated_at = str(datetime.now())
+            models.storage.new(self)
     def __str__(self):
         return f"[{self.__class__.__name__}] ({self.id}) <{self.__dict__}>"
     def save(self):
