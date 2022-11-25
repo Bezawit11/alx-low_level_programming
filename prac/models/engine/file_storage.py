@@ -18,8 +18,12 @@ class FileStorage:
             json.dump(self.__objects, f)
 
     def reload(self):
-        if exists(self.__file_path):
-            with open(self.__file_path, "r", encoding="utf-8") as f:
-                return json.load(f)
-        else:
-            return False
+        try:
+            with open(FileStorage.__file_path) as f:
+                objdict = json.load(f)
+                for o in objdict.values():
+                    cls_name = o["__class__"]
+                    del o["__class__"]
+                    self.new(eval(cls_name)(**o))
+        except FileNotFoundError:
+            return
