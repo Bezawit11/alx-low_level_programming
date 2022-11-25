@@ -1,31 +1,31 @@
 from os.path import exists
 from models.base_model import BaseModel
 import json
+
+
 class FileStorage:
+    """  """
     __file_path = "/alx-low_level_programming/prac/file.json"
     __objects = {}  # dictionary - empty but will store all objects by <class name>.id
 
     def all(self):
+        """  """
         print("all")
         return self.__objects
 
     def new(self, obj):
         """sets in __objects the obj with key <obj class name>.id"""
-        #FileStorage.__objects["{}.{}".format(obj.__class__.__name__, obj.id)] = obj.__dict__
-        #dict1 = obj.__dict__.copy()
-        #obj.__dict__["__class__"] = obj.__class__.__name__
-        #dict1["__class__"] = obj.__class__.__name__
         FileStorage.__objects["{}.{}".format(obj.__class__.__name__, obj.id)] = obj.to_dict()
 
     def save(self):
+        """ """
         print("saving")
         out_file = open(self.__file_path, "w")
         json.dump(self.__objects, out_file, indent=6)
         out_file.close()
-        #with open(self.__file_path, mode='w', encoding="utf-8") as f:
-         #   json.dump(self.__objects, f)
 
     def reload(self):
+        """  """
         try:
             with open(FileStorage.__file_path) as f:
                 read = json.load(f)
