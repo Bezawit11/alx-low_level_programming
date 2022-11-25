@@ -15,7 +15,7 @@ class FileStorage:
     def save(self):
         print("saving")
         with open(self.__file_path, mode='w', encoding="utf-8") as f:
-            f.write(json.dumps(self.__objects))
+            json.dump(self.__objects, f)
 
     def reload(self):
         if exists(self.__file_path):
