@@ -21,7 +21,7 @@ class FileStorage:
         """ """
         print("saving")
         out_file = open(self.__file_path, "w")
-        json.dump(self.__objects, out_file, indent=6)
+        json.dump(self.__objects, out_file, indent=6, default=str)
         out_file.close()
 
     def reload(self):
