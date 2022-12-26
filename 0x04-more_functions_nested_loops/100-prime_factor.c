@@ -7,7 +7,7 @@
 int main(void)
 
 {
-unsigned int long n, i, a, b;
+unsigned int long n, i, a, b, m = 0;
 unsigned int long d = 612852475143;
 for (n = 2; n <= d; n++)
 {
@@ -25,10 +25,12 @@ a = n;
 if (d % n == 0)
 {
 b = a + 0;
-/*printf("%lu", b);*/
+if (b > m){
+m = b;
 }
 }
 }
-printf("%lu\n", b);
+}
+printf("%lu\n", m);
 return (0);
 }
