@@ -2,6 +2,7 @@
 
 /**
  *main - prints largest prime factor
+ *as of now it works for smaler numbers but fails on large no
  *Return: returns an int
  */
 int main(void)
