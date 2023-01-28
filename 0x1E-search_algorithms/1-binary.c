@@ -28,13 +28,13 @@ return (a);
 int search(int *array, size_t low, size_t high, int value)
 {
 size_t a = (high + low) / 2, r, j;
-if (low == high)
-return (-1);
 printf("Searching in array: ");
 for (j = low; j < high; j++){
 printf("%d, ", array[j]);
 }
 printf("%d\n", array[high]);
+if (low == high)
+return (-1);
 if (array[a] == value)
 return (a);
 else if (array[a] > value)
