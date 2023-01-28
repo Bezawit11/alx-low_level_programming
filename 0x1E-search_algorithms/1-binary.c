@@ -32,7 +32,7 @@ printf("Searching in array: ");
 for (j = low; j < high; j++){
 printf("%d, ", array[j]);
 }
-printf("%d \n", array[high]);
+printf("%d\n", array[high]);
 if (low == high)
 return (-1);
 if (array[a] == value)
