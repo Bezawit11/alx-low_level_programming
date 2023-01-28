@@ -20,6 +20,7 @@ return (a);
 
 /**
  *search - recursive binary search
+ *@array: a pointer to the first element of the array to search in
  *@low: lowest index
  *@high: highest index
  *@value: the value to search for
@@ -29,7 +30,8 @@ int search(int *array, size_t low, size_t high, int value)
 {
 size_t a = (high + low) / 2, r, j;
 printf("Searching in array: ");
-for (j = low; j < high; j++){
+for (j = low; j < high; j++)
+{
 printf("%d, ", array[j]);
 }
 printf("%d\n", array[high]);
