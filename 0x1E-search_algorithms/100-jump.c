@@ -21,7 +21,8 @@ for (i = 0; i < size; i = i + j)
 if (array[i] >= value)
 {
 printf("Value found between indexes [%ld] and [%ld]\n", i - j, i);
-for (k = i - j; k <= i; k++){
+for (k = i - j; k <= i; k++)
+{
 printf("Value checked array[%ld] = [%d]\n", k, array[k]);
 if (array[k] == value)
 return (k);
