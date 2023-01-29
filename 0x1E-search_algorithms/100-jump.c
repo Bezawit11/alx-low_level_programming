@@ -27,5 +27,7 @@ return (k);
 }
 printf("Value checked array[%ld] = [%d]\n", i, array[i]);
 }
+printf("Value found between indexes [%ld] and [%ld]\n", i - j, i);
+printf("Value checked array[%ld] = [%d]\n", i - j, array[i - j]);
 return -1;
 }
